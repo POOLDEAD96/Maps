@@ -1,0 +1,397 @@
+/* ════════════════════════════════════════════════════
+   MONGOLIE À VÉLO — Feuille de style
+   Modifie ce fichier pour changer l'apparence de la carte.
+   Structure :
+     1. Variables (couleurs, catégories)
+     2. Base
+     3. Header
+     4. Filtres
+     5. Layout principal
+     6. Panneau détail
+     7. Marqueurs
+     8. Légende
+     9. Popups Leaflet
+    10. Responsive
+════════════════════════════════════════════════════ */
+
+
+/* ── 1. VARIABLES ────────────────────────────────── */
+:root {
+  /* Palette générale */
+  --steppe:    #C8B48A;
+  --ger:       #E8D5A3;   /* fond barre de filtres */
+  --sky:       #2A5F7A;   /* couleur principale (header, étapes) */
+  --sky-light: #4A8FA8;
+  --ember:     #C0392B;   /* rouge alertes / départ */
+  --birch:     #F5F0E8;   /* fond général */
+  --ink:       #1A1A1A;   /* texte principal */
+  --muted:     #6B6560;   /* texte secondaire */
+  --border:    #D4C9B5;   /* bordures */
+
+  /* Couleurs des catégories de POI */
+  --cat-festival:    #E67E22;
+  --cat-culture:     #8B6BBE;
+  --cat-nature:      #2E8B57;
+  --cat-etape:       #2A5F7A;
+  --cat-depart:      #C0392B;
+  --cat-frontiere:   #5D4037;
+  --cat-point_de_vue:#E8A020;
+}
+
+
+/* ── 2. BASE ─────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: var(--birch);
+  color: var(--ink);
+}
+
+
+/* ── 3. HEADER ───────────────────────────────────── */
+#header {
+  background: var(--sky);
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#header h1 {
+  font-family: 'Asangha', serif; /* fallback: serif si la font n'est pas chargée */
+  font-size: 40px;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+}
+
+#header h1 span {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  margin-top: 2px;
+}
+
+#header-right {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  opacity: 0.75;
+  color: #fff;
+}
+
+
+/* ── 4. FILTRES ──────────────────────────────────── */
+#filters {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  padding: 12px 16px;
+  background: var(--ger);
+  border-bottom: 1px solid var(--border);
+}
+
+.filter-btn {
+  border: 1.5px solid transparent;
+  border-radius: 20px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+  background: #fff;
+  color: var(--muted);
+}
+
+.filter-btn:hover { filter: brightness(0.95); }
+
+.filter-btn.active {
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Couleur active par catégorie */
+.filter-btn[data-cat="all"].active         { background: var(--sky); }
+.filter-btn[data-cat="festival"].active    { background: var(--cat-festival); }
+.filter-btn[data-cat="culture"].active     { background: var(--cat-culture); }
+.filter-btn[data-cat="nature"].active      { background: var(--cat-nature); }
+.filter-btn[data-cat="etape"].active       { background: var(--cat-etape); }
+.filter-btn[data-cat="depart"].active      { background: var(--cat-depart); }
+.filter-btn[data-cat="frontiere"].active   { background: var(--cat-frontiere); }
+.filter-btn[data-cat="point_de_vue"].active{ background: var(--cat-point_de_vue); }
+
+
+/* ── 5. LAYOUT PRINCIPAL ─────────────────────────── */
+#main {
+  display: flex;
+  height: calc(100vh - 145px); /* 145px = hauteur header + filtres */
+}
+
+#map {
+  flex: 1;
+  min-width: 0;
+}
+
+
+/* ── 6. PANNEAU DÉTAIL ───────────────────────────── */
+#detail {
+  width: 370px;
+  flex-shrink: 0;
+  overflow-y: auto;
+  background: var(--birch);
+  border-left: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+}
+
+#detail-placeholder {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  text-align: center;
+  color: var(--muted);
+  gap: 12px;
+}
+
+#detail-placeholder .big-emoji { font-size: 48px; }
+#detail-placeholder p { font-size: 13px; line-height: 1.6; }
+
+#detail-content {
+  display: none;
+  flex-direction: column;
+}
+
+.detail-hero {
+  background: var(--sky); /* remplacé dynamiquement par la couleur de la catégorie */
+  color: #fff;
+  padding: 18px 20px 16px;
+}
+
+.detail-hero .cat-badge {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.8;
+  margin-bottom: 6px;
+}
+
+.detail-hero h2 {
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.detail-hero .ville {
+  font-size: 12px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.detail-body {
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.detail-section {
+  font-size: 13px;
+  line-height: 1.7;
+  color: var(--ink);
+}
+
+.detail-section-label {
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+/* Bloc festival */
+.detail-dates {
+  background: #FFF8EC;
+  border: 1px solid #F0C060;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 12.5px;
+  color: #7A5500;
+}
+
+/* Bloc conseil vélo */
+.detail-conseil {
+  background: #EBF5EC;
+  border-left: 3px solid var(--cat-nature);
+  padding: 10px 12px;
+  font-size: 12.5px;
+  border-radius: 0 6px 6px 0;
+  color: #1A4020;
+}
+
+/* Bloc attention */
+.detail-attention {
+  background: #FEF0F0;
+  border-left: 3px solid var(--ember);
+  padding: 10px 12px;
+  font-size: 12.5px;
+  border-radius: 0 6px 6px 0;
+  color: #6A1010;
+}
+
+/* Pills saison */
+.saison-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 4px;
+}
+
+.saison-pill {
+  background: var(--ger);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2px 10px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* Pills pack */
+.pack-pills {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.pack-pill {
+  border-radius: 12px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 500;
+}
+
+.pack-pill.aventurier  { background: #2A3A2A; color: #8BCA8B; }
+.pack-pill.cle_en_main { background: #2A2A3A; color: #8B8BCA; }
+
+
+/* ── 7. MARQUEURS LEAFLET ────────────────────────── */
+.marker-pin {
+  width: 35px;
+  height: 35px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255,255,255,0.85);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  cursor: pointer;
+  transition: transform 0.15s, filter 0.15s;
+}
+
+.marker-pin:hover { filter: brightness(1.15); }
+
+.marker-pin .emoji {
+  transform: rotate(45deg);
+  font-size: 18px;
+  line-height: 1;
+}
+
+
+/* ── 8. LÉGENDE ──────────────────────────────────── */
+#legende {
+  position: absolute;
+  bottom: 24px;
+  left: 12px;
+  background: rgba(245, 240, 232, 0.95);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 14px;
+  z-index: 999;
+  font-size: 11px;
+  backdrop-filter: blur(4px);
+}
+
+#legende strong {
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 7px;
+}
+
+.leg-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 5px;
+  color: var(--ink);
+}
+
+.leg-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+
+/* ── 9. POPUPS LEAFLET ───────────────────────────── */
+.leaflet-popup-content-wrapper {
+  background: var(--birch);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+.leaflet-popup-content {
+  margin: 12px 14px;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.leaflet-popup-tip-container { display: none; }
+
+.popup-title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.popup-cat {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+}
+
+
+/* ── 10. RESPONSIVE ──────────────────────────────── */
+@media (max-width: 640px) {
+  #main        { flex-direction: column; height: auto; }
+  #map         { height: 55vh; }
+  #detail      { width: 100%; border-left: none; border-top: 1px solid var(--border); max-height: 45vh; }
+  #legende     { display: none; }
+}

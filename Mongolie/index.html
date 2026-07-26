@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongolie à Vélo — Carte Interactive</title>
+
+  <!-- Leaflet -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Styles → tout dans style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     HEADER
+════════════════════════════════════════════════ -->
+<header id="header">
+  <h1>
+    Mongolie à Vélo
+    <span>Carte interactive des étapes & points d'intérêt</span>
+  </h1>
+  <div id="header-right">
+    🚴 Route de l'aventurier · vers l'Ouest mongol
+  </div>
+</header>
+
+<!-- ════════════════════════════════════════════════
+     FILTRES
+     Pour ajouter une catégorie : copier un bouton,
+     changer data-cat et le label.
+════════════════════════════════════════════════ -->
+<div id="filters">
+  <button class="filter-btn active" data-cat="all">Tout afficher</button>
+  <button class="filter-btn" data-cat="depart">🚩 Départ</button>
+  <button class="filter-btn" data-cat="etape">🏠 Étapes</button>
+  <button class="filter-btn" data-cat="culture">🏛️ Culture</button>
+  <button class="filter-btn" data-cat="festival">🎉 Festivals</button>
+  <button class="filter-btn" data-cat="nature">🌿 Nature</button>
+  <button class="filter-btn" data-cat="point_de_vue">👁️ Points de vue</button>
+  <button class="filter-btn" data-cat="frontiere">🛂 Frontière</button>
+</div>
+
+<!-- ════════════════════════════════════════════════
+     CARTE + PANNEAU DÉTAIL
+════════════════════════════════════════════════ -->
+<div id="main">
+
+  <div id="map"></div>
+
+  <aside id="detail">
+    <div id="detail-placeholder">
+      <div class="big-emoji">🗺️</div>
+      <p><strong>Clique sur un marqueur</strong> pour découvrir le lieu — tips de cycliste, festivals, conseils pratiques et points de vigilance.</p>
+    </div>
+    <div id="detail-content"></div>
+  </aside>
+
+</div>
+
+<!-- ════════════════════════════════════════════════
+     SCRIPTS
+════════════════════════════════════════════════ -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="carte.js"></script>
+
+</body>
+</html>
