@@ -17,25 +17,21 @@
 
 /* ── 1. VARIABLES ────────────────────────────────── */
 :root {
-  /* Palette générale */
-  --steppe:    #C8B48A;
-  --ger:       #E8D5A3;   /* fond barre de filtres */
-  --sky:       #2A5F7A;   /* couleur principale (header, étapes) */
-  --sky-light: #4A8FA8;
-  --ember:     #C0392B;   /* rouge alertes / départ */
-  --birch:     #F5F0E8;   /* fond général */
-  --ink:       #1A1A1A;   /* texte principal */
-  --muted:     #6B6560;   /* texte secondaire */
-  --border:    #D4C9B5;   /* bordures */
+  --ger:       #C8D97A;;   /* fond filtres — soie crème */
+  --sky:       #2E86AB;  /* principal — rouge drapeau */
+  --sky-light: #D94F3D;
+  --ember:     #8B1A1A;   /* alertes — rouge sombre */
+  --birch:     #E8E4DE;   /* fond général — parchemin */
+  --ink:       #1A1008;   /* texte */
+  --muted:     #6B5A3A;   /* texte secondaire */
+  --border:    #D4B896;   /* bordures — cuir clair */
 
-  /* Couleurs des catégories de POI */
-  --cat-festival:    #E67E22;
-  --cat-culture:     #8B6BBE;
-  --cat-nature:      #2E8B57;
-  --cat-etape:       #2A5F7A;
-  --cat-depart:      #C0392B;
-  --cat-frontiere:   #5D4037;
-  --cat-point_de_vue:#E8A020;
+  --cat-depart:       #C0272D;   /* rouge drapeau */
+  --cat-etape:        #1B4F8A;   /* bleu drapeau */
+  --cat-pratique:     #edc709;   /* jaune */
+  --cat-culture:      #8B6BBE;   /* bleu drapeau */
+  --cat-nature:       #2E8B57;   /* vert prairie */
+  --cat-frontiere:    #5D4037;   /* cuir sombre */
 }
 
 
@@ -90,7 +86,7 @@ html, body {
   gap: 8px;
   flex-wrap: wrap;
   font-size: 12px;
-  opacity: 0.75;
+  opacity: 1;
   color: #fff;
 }
 
@@ -127,13 +123,12 @@ html, body {
 
 /* Couleur active par catégorie */
 .filter-btn[data-cat="all"].active         { background: var(--sky); }
-.filter-btn[data-cat="festival"].active    { background: var(--cat-festival); }
 .filter-btn[data-cat="culture"].active     { background: var(--cat-culture); }
 .filter-btn[data-cat="nature"].active      { background: var(--cat-nature); }
 .filter-btn[data-cat="etape"].active       { background: var(--cat-etape); }
+.filter-btn[data-cat="pratique"].active    { background: var(--cat-pratique); }
 .filter-btn[data-cat="depart"].active      { background: var(--cat-depart); }
 .filter-btn[data-cat="frontiere"].active   { background: var(--cat-frontiere); }
-.filter-btn[data-cat="point_de_vue"].active{ background: var(--cat-point_de_vue); }
 
 
 /* ── 5. LAYOUT PRINCIPAL ─────────────────────────── */
@@ -258,23 +253,6 @@ html, body {
   color: #6A1010;
 }
 
-/* Pills saison */
-.saison-pills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  margin-top: 4px;
-}
-
-.saison-pill {
-  background: var(--ger);
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 2px 10px;
-  font-size: 11px;
-  color: var(--muted);
-}
-
 /* Pills pack */
 .pack-pills {
   display: flex;
@@ -323,7 +301,7 @@ html, body {
   position: absolute;
   bottom: 24px;
   left: 12px;
-  background: rgba(245, 240, 232, 0.95);
+  background: #E8DABE;
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px 14px;
@@ -337,7 +315,7 @@ html, body {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: var(--muted);
+  color: #6B5A3A;
   margin-bottom: 7px;
 }
 
@@ -346,7 +324,7 @@ html, body {
   align-items: center;
   gap: 7px;
   margin-bottom: 5px;
-  color: var(--ink);
+  color: #6B5A3A;
 }
 
 .leg-dot {

@@ -10,23 +10,21 @@
 
 /* ── COULEURS ET LABELS PAR CATÉGORIE ───────────── */
 const CAT_COLORS = {
-  festival:     '#E67E22',
+  depart:       '#C0272D',
+  etape:        '#1B4F8A',
+  pratique:     '#edc709',
   culture:      '#8B6BBE',
   nature:       '#2E8B57',
-  etape:        '#2A5F7A',
-  depart:       '#C0392B',
-  frontiere:    '#5D4037',
-  point_de_vue: '#E8A020'
+  frontiere:    '#5D4037'
 };
 
 const CAT_LABELS = {
-  festival:     'Festival',
-  culture:      'Culture & Histoire',
-  nature:       'Nature',
-  etape:        'Étape',
   depart:       'Point de départ',
-  frontiere:    'Frontière',
-  point_de_vue: 'Point de vue'
+  etape:        'Étapes',
+  pratique:     'Infos pratiques',
+  culture:      'Culture & Divertissement',
+  nature:       'Nature',
+  frontiere:    'Frontière'
 };
 
 
@@ -70,15 +68,6 @@ function showDetail(poi) {
     ? `<div class="detail-dates">🗓️ <strong>Festival :</strong> ${poi.dates_festival}</div>`
     : '';
 
-  const saisonHtml = poi.saison
-    ? `<div>
-         <div class="detail-section-label">Saison recommandée</div>
-         <div class="saison-pills">
-           ${poi.saison.map(s => `<span class="saison-pill">${s}</span>`).join('')}
-         </div>
-       </div>`
-    : '';
-
   const packHtml = poi.pack
     ? `<div>
          <div class="detail-section-label">Inclus dans</div>
@@ -116,7 +105,6 @@ function showDetail(poi) {
         ${poi.description}
       </div>
       ${festivalHtml}
-      ${saisonHtml}
       ${packHtml}
       ${conseilHtml}
       ${attentionHtml}
