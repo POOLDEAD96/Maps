@@ -12,7 +12,7 @@
 const CAT_COLORS = {
   depart:       '#C0272D',
   etape:        '#1B4F8A',
-  pratique:     '#edc709',
+  pratique:     '#EDC709',
   culture:      '#8B6BBE',
   nature:       '#2E8B57',
   frontiere:    '#5D4037'
