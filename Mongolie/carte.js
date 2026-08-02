@@ -41,6 +41,20 @@ L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r
   subdomains: 'abcd'
 }).addTo(map);
 
+/* CONTOUR DE LA MONGOLIE */
+fetch('contour_mongolie.json')
+  .then(r => r.json())
+  .then(data => {
+    L.geoJSON(data, {
+      style: {
+        color: '#250598',      // couleur du contour
+        weight: 2,  
+        fill: false           // épaisseur du trait
+        //fillColor: '#E8F4F8',  // couleur de remplissage
+        //fillOpacity: 0     // très transparent
+      }
+    }).addTo(map);
+  });
 
 /* ── MARQUEURS ───────────────────────────────────── */
 let allMarkers  = [];
