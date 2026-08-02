@@ -12,7 +12,7 @@
 const CAT_COLORS = {
   depart:       '#C0272D',
   etape:        '#1B4F8A',
-  pratique:     '#EDC709',
+  pratique:     '#f3c600',
   culture:      '#8B6BBE',
   nature:       '#2E8B57',
   frontiere:    '#5D4037'
@@ -29,11 +29,14 @@ const CAT_LABELS = {
 
 
 /* ── INITIALISATION DE LA CARTE ─────────────────── */
+const isMobile = window.innerWidth <= 768;
+
 const map = L.map('map', {
   center: [46.5, 102],
-  zoom: 5.4,
-  zoomControl: true
+  zoom: isMobile ? 4 : 5,
+  zoomControl: !isMobile
 });
+
 
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png', {
   attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
@@ -124,10 +127,24 @@ function showDetail(poi) {
       ${attentionHtml}
     </div>
   `;
-
+  // Ouvre le panneau sur mobile
+  document.getElementById('detail').classList.add('open');
+  if (isMobile) {
+  const offset = map.getSize().y * 0.25;
+  const point = map.latLngToContainerPoint([poi.lat, poi.lng]);
+  const newPoint = L.point(point.x, point.y + offset);
+  const newLatLng = map.containerPointToLatLng(newPoint);
+  map.panTo(newLatLng, { animate: true, duration: 0.4 });
+} else {
   map.panTo([poi.lat, poi.lng], { animate: true, duration: 0.5 });
+  }
 }
 
+function fermerDetail() {
+  document.getElementById('detail').classList.remove('open');
+  document.getElementById('detail-placeholder').style.display = '';
+  document.getElementById('detail-content').style.display = 'none';
+}
 
 /* ── FILTRES ─────────────────────────────────────── */
 function applyFilter(cat) {
