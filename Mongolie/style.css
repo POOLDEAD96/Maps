@@ -253,6 +253,31 @@ html, body {
   color: #6A1010;
 }
 
+/* Bouton fermeture */
+#detail-close {
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.20);
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.15s;
+}
+
+#detail-close:hover {
+  background: rgba(0,0,0,0.35);
+}
+
 /* Pills pack */
 .pack-pills {
   display: flex;
@@ -270,31 +295,6 @@ html, body {
 
 .pack-pill.aventurier  { background: #2A3A2A; color: #8BCA8B; }
 .pack-pill.cle_en_main { background: #2A2A3A; color: #8B8BCA; }
-
-/* Bouton fermeture */
-#detail-close {
-  display: none;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(0,0,0,0.20);
-  color: #fff;
-  font-size: 13px;
-  cursor: pointer;
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  transition: background 0.15s;
-}
-
-#detail-close:hover {
-  background: rgba(0,0,0,0.35);
-}
 
 /* ── 7. MARQUEURS LEAFLET ────────────────────────── */
 .marker-pin {
@@ -433,6 +433,10 @@ html, body {
   /* Bouton fermeture */
   #detail-close {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    padding: 0;
   }
 
   /* Header compact */
