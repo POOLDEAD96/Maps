@@ -1,0 +1,36 @@
+/* ════════════════════════════════════════════════════
+   THÈME MONGOLIE — theme.css
+   Surcharge uniquement les variables de style.css.
+   Tout ce qui n'est pas redéfini ici hérite de style.css.
+
+   Pour modifier l'apparence de la carte Mongolie :
+   → changer les valeurs ci-dessous uniquement.
+════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette générale ── */
+  --sky:        #2E86AB;   /* header — bleu ciel mongol */
+  --ger:        #C8D97A;   /* barre filtres — vert steppe */
+  --birch:      #E8E4DE;   /* fond panneau détail — gris pierre */
+  --ember:      #8B1A1A;   /* alertes */
+  --ink:        #1A1008;   /* texte principal */
+  --muted:      #6B5A3A;   /* texte secondaire */
+  --border:     #D4B896;   /* bordures */
+
+  /* ── Légende ── */
+  --legende-bg: #E8DABE;   /* sable clair */
+
+  /* ── Typographie ── */
+  --font-titre:      'Asangha', serif;
+  --font-titre-size: 40px;
+
+  /* ── Couleurs des catégories ── */
+  /* Ces variables sont utilisées par style.css pour les filtres actifs.
+     Les mêmes couleurs doivent être dans CONFIG.categories (index.html). */
+  --cat-depart:    #C0272D;
+  --cat-etape:     #1B4F8A;
+  --cat-pratique:  #f3c600;
+  --cat-culture:   #8B6BBE;
+  --cat-nature:    #2E8B57;
+  --cat-frontiere: #5D4037;
+}

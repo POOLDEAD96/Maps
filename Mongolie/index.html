@@ -12,28 +12,71 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Styles → tout dans style.css -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Style base (universel) + thème pays -->
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="theme.css" />
 </head>
 <body>
+
+<!-- ════════════════════════════════════════════════
+     CONFIG DU PAYS
+     C'est ici que tu personnalises chaque carte.
+     Le moteur (carte.js) lit cette variable.
+════════════════════════════════════════════════ -->
+<script>
+const CONFIG = {
+
+  /* Carte */
+  centre:     [46.5, 102],
+  zoom:       5,
+  zoomMobile: 4,
+
+  /* Fond de carte */
+  tileUrl:         'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+  tileAttribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
+
+  /* Contour du pays */
+  contour:       'contour_mongolie.json',
+  contourColor:  '#250598',
+  contourWeight: 2,
+
+  header: {
+    titre:     { fr: "Mongolie à Vélo",                                    en: "Mongolia by Bike"                          },
+    soustitre: { fr: "Carte interactive des étapes & points d'intérêt",    en: "Interactive map of stages & points of interest" },
+    droite:    { fr: "🚴 Route de l'aventurier · vers l'Ouest mongol",     en: "🚴 Adventurer's route · towards Western Mongolia" }
+  },
+
+  /* Données POIs */
+  pois: 'pois.json',
+
+  /* Catégories — id doit correspondre aux valeurs dans pois.json */
+  categories: [
+    { id: 'depart',   color: 'var(--cat-depart)', label: { fr: 'Point de départ',           en: 'Starting point'     } },
+    { id: 'etape',    color: 'var(--cat-etape)', label: { fr: 'Étapes',                     en: 'Stages'             } },
+    { id: 'pratique', color: 'var(--cat-pratique)', label: { fr: 'Infos pratiques',         en: 'Practical info'     } },
+    { id: 'culture',  color: 'var(--cat-culture)', label: { fr: 'Culture & Divertissement', en: 'Culture & Entertainement'} },
+    { id: 'nature',   color: 'var(--cat-nature)', label: { fr: 'Nature',                    en: 'Nature'             } },
+    { id: 'frontiere',color: 'var(--cat-frontiere)', label: { fr: 'Frontière',              en: 'Border'             } }
+  ]
+};
+</script>
 
 <!-- ════════════════════════════════════════════════
      HEADER
 ════════════════════════════════════════════════ -->
 <header id="header">
   <h1>
-    Mongolie à Vélo
-    <span>Carte interactive des étapes & points d'intérêt</span>
+    <div id="header-titre"> </div> 
+    <span id="header-soustitre"></span>
   </h1>
-  <div id="header-right">
-    🚴 Route de l'aventurier · vers l'Ouest mongol
-  </div>
+  <div id="header-right"></div>
 </header>
 
 <!-- ════════════════════════════════════════════════
      FILTRES
-     Pour ajouter une catégorie : copier un bouton,
+     Ajouter une catégorie : copier un bouton,
      changer data-cat et le label.
+     data-cat doit correspondre à un id dans CONFIG.categories
 ════════════════════════════════════════════════ -->
 <div id="filters">
   <button class="filter-btn active" data-cat="all">Tout afficher</button>
@@ -53,11 +96,9 @@
   <div id="map"></div>
 
   <aside id="detail">
-    <!-- Bouton fermeture — visible uniquement mobile -->
-    <button id="detail-close" onclick="fermerDetail()">✖</button>
     <div id="detail-placeholder">
       <div class="big-emoji">🗺️</div>
-      <p><strong>Clique sur un marqueur</strong> pour découvrir le lieu — tips de cycliste, infos culturelles, de vigilance et conseils pratiques.</p>
+      <p><strong>Clique sur un marqueur</strong> pour découvrir le lieu — tips de cycliste, infos culturelles, conseils pratiques et points de vigilance.</p>
     </div>
     <div id="detail-content"></div>
   </aside>
@@ -68,7 +109,7 @@
      SCRIPTS
 ════════════════════════════════════════════════ -->
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-<script src="carte.js"></script>
+<script src="../carte.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,1204 @@
+[
+  {
+    "id": "aeroport-ub",
+    "nom": {
+      "fr": "Aéroport de Chinggis Khaan",
+      "en": "Chinggis Khaan International Airport"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.6431,
+    "lng": 106.8198,
+    "categorie": "etape",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "✈️",
+    "description": {
+      "fr": "Aéroport international d'Oulan-Bator, situé de l'autre côté de la chaîne de montagne Bogd Khan. Le trajet vers le centre-ville est long et fastidieux, route peu adaptée au vélo.",
+      "en": "Ulaanbaatar's international airport, located on the other side of the Bogd Khan mountain range. The ride to the city centre is long and impractical by bike."
+    },
+    "conseil_velo": {
+      "fr": "Taxi fortement conseillé si arrivée tôt le matin ou tard le soir. Compter environ 30€ / 100 000–120 000 MNT.",
+      "en": "Taxi strongly recommended for early morning or late night arrivals. Budget around 30€ / 100,000–120,000 MNT."
+    },
+    "attention": {
+      "fr": "C'est l'aéroport sur lequel vous atterrissez et repartez — ne pas confondre avec l'ancien aéroport proche du centre-ville (fermé aux vols commerciaux).",
+      "en": "This is the airport you fly into and out of — don't confuse it with the old airport near the city centre (closed to commercial flights)."
+    }
+  },
+  {
+    "id": "ub-hub",
+    "nom": {
+      "fr": "Oulan-Bator — Porte vers la steppe",
+      "en": "Ulaanbaatar — Gateway to the steppe"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.91939,
+    "lng": 106.91765,
+    "categorie": "etape",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏙️",
+    "description": {
+      "fr": "Capitale et unique vraie métropole du pays. Point de départ incontournable : accès rapide au parc de Terelj (1h30), à la statue équestre de Gengis Khan (1h), au festival du Naadam en juillet. La place Sükhbaatar et le musée national sont incontournables dans l'hypercentre.",
+      "en": "The capital and only real metropolis in the country. Essential starting point: quick access to Terelj National Park (1h30), the Genghis Khan Equestrian Statue (1h), and the Naadam festival in July. Sukhbaatar Square and the National Museum are must-sees in the city centre."
+    },
+    "conseil_velo": {
+      "fr": "Évitez de quitter UB à vélo — 4 voies chaotiques sur 20–30 km. Préparez le maximum ici avant de partir en steppe.",
+      "en": "Avoid leaving UB by bike — chaotic 4-lane roads for 20–30 km. Stock up and prepare everything here before heading into the steppe."
+    },
+    "attention": {
+      "fr": "La ville est étalée et les transports internes sont chaotiques. Comptez large sur vos déplacements ou prenez le vélo en ville.",
+      "en": "The city is sprawling and internal transport is chaotic. Allow plenty of time for getting around, or use your bike within the city."
+    }
+  },
+  {
+    "id": "nomin-emart",
+    "nom": {
+      "fr": "Supermarchés Nomin, Minii et Emart",
+      "en": "Nomin, Minii & Emart Supermarkets"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.91705,
+    "lng": 106.90632,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🛒",
+    "description": {
+      "fr": "3 enseignes dispersées dans UB, les meilleures pour le ravitaillement alimentaire et le matériel de base. On y trouve de la viande séchée (borts), des conserves, du riz, des pâtes — utile pour les zones isolées où l'accès à la viande fraîche est limité.",
+      "en": "3 chains spread across UB, the best for food supplies and basic gear. You'll find dried meat (borts), canned goods, rice, and pasta — essential for remote areas with limited access to fresh food."
+    },
+    "conseil_velo": {
+      "fr": "Faire le plein de vivres secs avant de quitter la capitale.",
+      "en": "Stock up on dry food before leaving the capital."
+    },
+    "attention": {
+      "fr": "Les stocks varient. Ne comptez pas trouver des produits spécifiques ailleurs en Mongolie.",
+      "en": "Stock levels vary. Don't expect to find specific products anywhere else in Mongolia."
+    }
+  },
+  {
+    "id": "state-department-store",
+    "nom": {
+      "fr": "State Department Store",
+      "en": "State Department Store"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.91705,
+    "lng": 106.90632,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏬",
+    "description": {
+      "fr": "Grand magasin central d'UB. Plusieurs étages avec marques outdoor internationales (habits chauds, imperméables), cachemire, matériel de camping, réchauds, bouteilles de gaz, accessoires et outils peu chers. Incontournable avant le départ.",
+      "en": "UB's main department store. Multiple floors with international outdoor brands (warm clothes, waterproofs), cashmere, camping gear, stoves, gas canisters, and cheap accessories. A must-visit before departure."
+    },
+    "conseil_velo": {
+      "fr": "Acheter ici les bouteilles de gaz pour réchaud, les habits techniques et les petites pièces introuvables en province.",
+      "en": "Buy your gas canisters, technical clothing, and small items that are impossible to find in the provinces."
+    },
+    "attention": {
+      "fr": "Acheter filtres à eau et pastilles de purification avant votre arrivée en Mongolie — presque introuvables ici, même à UB.",
+      "en": "Buy water filters and purification tablets before arriving in Mongolia — they're almost impossible to find, even in UB."
+    }
+  },
+  {
+    "id": "naadam-stadium",
+    "nom": {
+      "fr": "Stade du Naadam",
+      "en": "Naadam Stadium"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.90221,
+    "lng": 106.9162,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🤼",
+    "dates_festival": {
+      "fr": "11–13 juillet (fixe chaque année)",
+      "en": "July 11–13 (fixed every year)"
+    },
+    "description": {
+      "fr": "Stade national où se déroule l'ouverture officielle du Naadam, le festival le plus important de Mongolie. Cérémonie d'ouverture spectaculaire, lutte (bökh), tir à l'arc et courses hippiques dans les environs.",
+      "en": "The national stadium hosting the official opening of Naadam, Mongolia's most important festival. Spectacular opening ceremony, wrestling (bökh), archery, and horse racing in the surrounding area."
+    },
+    "conseil_velo": {
+      "fr": "Arriver 2 jours avant pour trouver un hébergement et planifier vos achats. Le pays ferme la majorité des magasins et services publics la semaine suivant le Naadam.",
+      "en": "Arrive 2 days early to find accommodation and plan your shopping. Most shops and public services close the week after Naadam."
+    },
+    "attention": {
+      "fr": "Réserver vos billets plusieurs mois à l'avance. Ou faites comme moi : profitez des célébrations autour du stade, c'est gratuit — costumes, écran géant, activités et nourriture sont déjà très divertissants.",
+      "en": "Book tickets several months in advance. Or do as I did: enjoy the celebrations around the stadium for free — costumes, big screens, activities and food are already very entertaining."
+    }
+  },
+  {
+    "id": "carte-sim",
+    "nom": {
+      "fr": "Carte SIM — Mobicom / Unitel",
+      "en": "SIM Card — Mobicom / Unitel"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.90278,
+    "lng": 106.91264,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "📱",
+    "description": {
+      "fr": "À acheter dès l'arrivée à UB. Points de vente : près du stade national (Naadam Center — ferme quelques jours après le Naadam), et en centre-ville. Comptez 5–10€ pour 30–40 Go de data en 2025.",
+      "en": "Buy one as soon as you arrive in UB. Sales points: near the national stadium (Naadam Center — closes a few days after Naadam) and in the city centre. Budget 5–10€ for 30–40 GB of data in 2025."
+    },
+    "conseil_velo": {
+      "fr": "Mobicom est un des réseaux les plus fiables sur la route vers l'ouest.",
+      "en": "Mobicom is one of the most reliable networks on the western route."
+    },
+    "attention": {
+      "fr": "La majorité des agences téléphoniques ferment après les 3 premiers jours du festival. Prévoir d'acheter avant ou chercher un point de vente encore ouvert en centre-ville.",
+      "en": "Most phone shops close after the first 3 days of the festival. Plan to buy beforehand or look for an open shop in the city centre."
+    }
+  },
+  {
+    "id": "marche-narantuul",
+    "nom": {
+      "fr": "Marché Narantuul (Marché noir)",
+      "en": "Narantuul Market (Black Market)"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.90971,
+    "lng": 106.94746,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🏪",
+    "description": {
+      "fr": "Le grand marché populaire d'UB, surnommé 'marché noir'. On y trouve de tout : sacoches vélo, outils, pièces détachées, vêtements, équipements à prix très bas. Qualité variable.",
+      "en": "UB's large popular market, nicknamed the 'black market'. You'll find everything: bike panniers, tools, spare parts, clothes, and equipment at very low prices. Quality varies."
+    },
+    "conseil_velo": {
+      "fr": "Bon endroit pour trouver du matériel à moindre coût. Idéal si vous avez cassé quelque chose et cherchez un dépannage économique.",
+      "en": "Great place to find affordable gear. Ideal if something's broken and you need a budget fix."
+    },
+    "attention": {
+      "fr": "Prévoir du temps — le marché est immense et peu organisé. Qualité à vérifier.",
+      "en": "Allow plenty of time — the market is huge and poorly organised. Always check quality before buying."
+    }
+  },
+  {
+    "id": "velo-trek-mongolia",
+    "nom": {
+      "fr": "Magasin vélo — Trek Mongolia",
+      "en": "Bike Shop — Trek Mongolia"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.89448,
+    "lng": 106.92687,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🚲",
+    "description": {
+      "fr": "Boutique spécialisée vélo à UB — Trek Mongolia. Pièces détachées, chambres à air, câbles, chaînes, de la bonne qualité. Site web <a href='https://www.cyclinggobi.com/' target='_blank'>cyclinggobi.com</a> pour commander et se faire livrer partout à travers le pays.",
+      "en": "UB's specialist bike shop — Trek Mongolia. Spare parts, inner tubes, cables, chains, good quality. Website <a href='https://www.cyclinggobi.com/' target='_blank'>cyclinggobi.com</a> to order and get delivery anywhere in the country."
+    },
+    "conseil_velo": {
+      "fr": "Le vendeur est super et parle bien anglais. Demandez-lui des infos sur votre plan de voyage, il saura vous guider et conseiller.",
+      "en": "The owner is great and speaks good English. Ask him about your route — he'll guide and advise you well."
+    },
+    "attention": {
+      "fr": "Après la capitale, le matériel pour votre vélo sera TRÈS sommaire. Possibilité de se faire livrer depuis leur site depuis n'importe quelle ville en Mongolie.",
+      "en": "After the capital, bike supplies are VERY limited. You can order delivery from their website to any city in Mongolia."
+    }
+  },
+  {
+    "id": "gare-train-ub",
+    "nom": {
+      "fr": "Gare ferroviaire d'UB",
+      "en": "UB Train Station"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.90973,
+    "lng": 106.88357,
+    "categorie": "etape",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🚉",
+    "description": {
+      "fr": "Gare centrale du Transmongolien — trains vers Irkoutsk (Russie) au nord et Pékin (Chine) au sud. La solution pour éviter les 20–30 km de 4 voies urbaines à vélo.",
+      "en": "Central Trans-Mongolian Railway station — trains north to Irkutsk (Russia) and south to Beijing (China). The best way to avoid 20–30 km of chaotic urban highways by bike."
+    },
+    "conseil_velo": {
+      "fr": "Prendre le train pour sortir d'UB proprement. Le vélo passe à l'arrière du wagon. Vivez l'expérience séduisante des trains soviétiques.",
+      "en": "Take the train to leave UB cleanly. Your bike goes in the rear wagon. Enjoy the charming experience of Soviet-era trains."
+    },
+    "attention": {
+      "fr": "Acheter les billets à l'avance en haute saison (juillet). Emportez de la nourriture — le service restauration peut être absent sur les petites lignes.",
+      "en": "Buy tickets in advance during high season (July). Bring food — catering may not be available on smaller routes."
+    }
+  },
+  {
+    "id": "gare-bus-ub",
+    "nom": {
+      "fr": "Gare routière d'UB / Dragon Bus Terminal",
+      "en": "UB Bus Station / Dragon Bus Terminal"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.91186,
+    "lng": 106.81976,
+    "categorie": "etape",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🚌",
+    "description": {
+      "fr": "Gare routière pour les bus interprovinciaux vers le Nord et l'Ouest : Erdenet, Kharkhorin, Tsetserleg etc. La deuxième solution pour éviter les 20–30 km de 4 voies urbaines à vélo.",
+      "en": "Bus station for interprovincial routes north and west: Erdenet, Kharkhorin, Tsetserleg, etc. The second option to avoid 20–30 km of urban highways by bike."
+    },
+    "conseil_velo": {
+      "fr": "Le vélo passe en soute — si le chauffeur refuse, faites parler votre sens de la négociation, ça ira tout seul.",
+      "en": "Your bike goes in the luggage hold — if the driver refuses, use your negotiation skills, it'll work out."
+    },
+    "attention": {
+      "fr": "Acheter les billets à l'avance en haute saison. Horaires variables — vérifier sur place.",
+      "en": "Buy tickets in advance during high season. Schedules vary — check on site."
+    }
+  },
+  {
+    "id": "gandan",
+    "nom": {
+      "fr": "Monastère Gandantegchinlen",
+      "en": "Gandantegchinlen Monastery"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.9203,
+    "lng": 106.8986,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🛕",
+    "description": {
+      "fr": "Le plus grand monastère bouddhiste actif de Mongolie. Sa statue de Migjid Janraisig (26 m de haut, couverte de feuilles d'or) est l'une des plus impressionnantes d'Asie centrale. Cérémonie matinale des moines à 9h.",
+      "en": "Mongolia's largest active Buddhist monastery. Its Migjid Janraisig statue (26 m tall, covered in gold leaf) is one of the most impressive in Central Asia. Morning monk ceremony at 9am."
+    },
+    "conseil_velo": {
+      "fr": "Point de départ idéal pour déposer le vélo en sécurité avant d'explorer UB à pied.",
+      "en": "Ideal starting point to safely leave your bike before exploring UB on foot."
+    },
+    "attention": {
+      "fr": "Tourner dans le sens des aiguilles d'une montre, pas de photos pendant les cérémonies.",
+      "en": "Walk clockwise, no photos during ceremonies."
+    }
+  },
+  {
+    "id": "choijin-lama",
+    "nom": {
+      "fr": "Temple Choijin Lama",
+      "en": "Choijin Lama Temple"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.9064,
+    "lng": 106.9208,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏯",
+    "description": {
+      "fr": "Temple-musée au cœur d'UB, construit entre 1904 et 1908 pour le frère du dernier Khan. Cinq temples en un seul complexe, avec des masques de cham, des thankas et des statues de déités tantriques. L'un des mieux préservés du pays.",
+      "en": "Temple-museum in the heart of UB, built between 1904 and 1908 for the last Khan's brother. Five temples in one complex, with cham masks, thangkas, and tantric deity statues. One of the best-preserved in the country."
+    },
+    "conseil_velo": {
+      "fr": "En plein centre, facile à combiner avec le musée national juste à côté.",
+      "en": "Right in the centre, easy to combine with the National Museum next door."
+    },
+    "attention": {
+      "fr": "Entrée payante (~5000 MNT). Fermé le lundi.",
+      "en": "Paid entry (~5,000 MNT). Closed on Mondays."
+    }
+  },
+  {
+    "id": "palais-bogd-khan",
+    "nom": {
+      "fr": "Palais d'hiver du Bogd Khan",
+      "en": "Bogd Khan Winter Palace"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.8897,
+    "lng": 106.9175,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏰",
+    "description": {
+      "fr": "Résidence d'hiver du 8e Bogd Khan, dernier roi-dieu de Mongolie. Superbe complexe de temples et pavillons aux influences chinoises et tibétaines, remarquablement préservé. Petit musée avec collections de cadeaux diplomatiques et objets personnels du Khan.",
+      "en": "Winter residence of the 8th Bogd Khan, Mongolia's last god-king. Stunning complex of temples and pavilions with Chinese and Tibetan influences, remarkably well-preserved. Small museum with diplomatic gifts and personal belongings."
+    },
+    "conseil_velo": {
+      "fr": "Au sud du centre-ville, au pied de la montagne Bogd Khan. Combinable avec le monument de Zaisan juste derrière.",
+      "en": "South of the city centre, at the foot of Bogd Khan Mountain. Combine with the Zaisan Monument just behind it."
+    },
+    "attention": {
+      "fr": "Entrée payante : 15 000–20 000 MNT. Fermé le mardi.",
+      "en": "Paid entry: 15,000–20,000 MNT. Closed on Tuesdays."
+    }
+  },
+  {
+    "id": "zaisan",
+    "nom": {
+      "fr": "Monument de Zaisan",
+      "en": "Zaisan Monument"
+    },
+    "ville": {
+      "fr": "Oulan-Bator",
+      "en": "Ulaanbaatar"
+    },
+    "lat": 47.8889,
+    "lng": 106.92,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "👁️",
+    "description": {
+      "fr": "Monument soviétique au sommet d'une colline au sud d'UB. Fresque circulaire célébrant l'amitié soviéto-mongole. Vue panoramique à 360° sur toute la ville et les steppes environnantes. 400 marches depuis la base.",
+      "en": "Soviet monument on a hilltop south of UB. Circular fresco celebrating Soviet-Mongolian friendship. 360° panoramic view over the entire city and surrounding steppes. 400 steps from the base."
+    },
+    "conseil_velo": {
+      "fr": "Vue imprenable et coucher de soleil exceptionnel. Prévoir 1h à 2h aller-retour depuis le centre. À vélo vous gagnerez beaucoup de temps sur les transports chaotiques d'UB.",
+      "en": "Stunning view and exceptional sunsets. Allow 1–2 hours round trip from the centre. By bike you'll save a lot of time compared to UB's chaotic public transport."
+    },
+    "attention": {
+      "fr": "La montée est raide. Peu éclairé la nuit.",
+      "en": "The climb is steep. Poorly lit at night."
+    }
+  },
+  {
+    "id": "erdenet",
+    "nom": {
+      "fr": "Erdenet — Point de départ",
+      "en": "Erdenet — Starting point"
+    },
+    "ville": {
+      "fr": "Erdenet",
+      "en": "Erdenet"
+    },
+    "lat": 49.0278,
+    "lng": 104.0444,
+    "categorie": "depart",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🚩",
+    "description": {
+      "fr": "2ème ville de Mongolie, construite autour de l'une des plus grandes mines de cuivre du monde. Point de départ classique pour les cyclistes qui veulent éviter UB et attaquer directement la steppe. Bus et train de nuit direct depuis UB (6–8h).",
+      "en": "Mongolia's 2nd city, built around one of the world's largest copper mines. Classic starting point for cyclists wanting to skip UB and head straight into the steppe. Direct bus and overnight train from UB (6–8h)."
+    },
+    "conseil_velo": {
+      "fr": "Dernier grand ravitaillement avant des centaines de km de pistes. Réparer, gonfler, charger. Le supermarché Nomin près de la place centrale a tout le nécessaire.",
+      "en": "Last major resupply point before hundreds of km of tracks. Repair, inflate, and load up. The Nomin supermarket near the central square has everything you need."
+    },
+    "attention": {
+      "fr": "Ville très peu touristique et peu d'anglais parlé. Télécharger les cartes offline avant de partir.",
+      "en": "Very few tourists and little English spoken. Download offline maps before leaving."
+    }
+  },
+  {
+    "id": "route-erdenet-kharkhorin",
+    "nom": {
+      "fr": "Route Erdenet → Kharkhorin & début vallée Orkhon",
+      "en": "Erdenet → Kharkhorin route & Orkhon Valley start"
+    },
+    "ville": {
+      "fr": "Entre Erdenet et Kharkhorin",
+      "en": "Between Erdenet and Kharkhorin"
+    },
+    "lat": 48.35,
+    "lng": 103.5,
+    "categorie": "nature",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🛤️",
+    "description": {
+      "fr": "Steppe sublime au départ d'Erdenet — début de la vallée de l'Orkhon. Route neuve et parfaite depuis le village d'Orkhon jusqu'à 10–15 km avant Khishig Öndör. Après, c'est de la piste tape-cul jusqu'à Kharkhorin. Lac sympa sur le chemin pour une trempette rafraîchissante.",
+      "en": "Sublime steppe leaving Erdenet — start of the Orkhon Valley. Brand new smooth road from Orkhon village until 10–15 km before Khishig Öndör. After that, it's bumpy dirt track to Kharkhorin. A nice lake on the way for a refreshing swim."
+    },
+    "conseil_velo": {
+      "fr": "Profiter de l'asphalte tant qu'il dure. Ne pas rater le lac pour se baigner, surtout en été.",
+      "en": "Enjoy the tarmac while it lasts. Don't miss the lake for a swim, especially in summer."
+    },
+    "attention": {
+      "fr": "La section piste avant Kharkhorin peut être très poussiéreuse ou boueuse selon la météo.",
+      "en": "The dirt track section before Kharkhorin can be very dusty or muddy depending on the weather."
+    }
+  },
+  {
+    "id": "kharkhorin",
+    "nom": {
+      "fr": "Kharkhorin — Ancienne capitale",
+      "en": "Kharkhorin — Ancient Capital"
+    },
+    "ville": {
+      "fr": "Kharkhorin",
+      "en": "Kharkhorin"
+    },
+    "lat": 47.1957,
+    "lng": 102.8411,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏛️",
+    "dates_festival": {
+      "fr": "Petit Naadam local en juillet",
+      "en": "Small local Naadam in July"
+    },
+    "description": {
+      "fr": "Site de Karakorum, capitale de l'Empire mongol au XIIIe siècle sous Genghis et Ögedei Khan. Musée archéologique exceptionnel. Hub central pour rayonner vers la vallée de l'Orkhon (UNESCO) et organiser des tours vers les alentours.",
+      "en": "Site of Karakorum, capital of the Mongol Empire in the 13th century under Genghis and Ögedei Khan. Exceptional archaeological museum. Central hub to explore the Orkhon Valley (UNESCO) and organise tours of the surrounding area."
+    },
+    "conseil_velo": {
+      "fr": "Carrefour stratégique : routes vers Tsetserleg à l'ouest, Khangai au sud, Erdenet au nord et UB à l'est. Prendre le temps de 2 à 3 nuits minimum.",
+      "en": "Strategic crossroads: routes west to Tsetserleg, south to Khangai, north to Erdenet, and east to UB. Take at least 2–3 nights here."
+    },
+    "attention": {
+      "fr": "Les tours organisés depuis ici (vallée Orkhon, chutes Ulaan Tsutgalan) sont souvent bien moins chers qu'UB. Négocier directement avec les familles et tour opérateurs locaux.",
+      "en": "Tours organised from here (Orkhon Valley, Ulaan Tsutgalan falls) are often much cheaper than from UB. Negotiate directly with local families and tour operators."
+    }
+  },
+  {
+    "id": "erdene-zuu",
+    "nom": {
+      "fr": "Monastère Erdene Zuu",
+      "en": "Erdene Zuu Monastery"
+    },
+    "ville": {
+      "fr": "Kharkhorin",
+      "en": "Kharkhorin"
+    },
+    "lat": 47.1978,
+    "lng": 102.8367,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "⛩️",
+    "description": {
+      "fr": "Premier monastère bouddhiste de Mongolie, construit en 1586 avec les pierres des palais de Gengis Khan. Enceinte de 400 m de côté avec 108 stupas blancs. Classé UNESCO dans le cadre du Paysage culturel de la Vallée de l'Orkhon.",
+      "en": "Mongolia's first Buddhist monastery, built in 1586 using stones from Genghis Khan's palaces. A 400 m enclosure with 108 white stupas. UNESCO-listed as part of the Orkhon Valley Cultural Landscape."
+    },
+    "conseil_velo": {
+      "fr": "À 500m de Kharkhorin, parfait à vélo. Visiter tôt le matin pour éviter les cars de touristes.",
+      "en": "500m from Kharkhorin, perfect by bike. Visit early in the morning to avoid tourist buses."
+    },
+    "attention": {
+      "fr": "Entrée payante pour les temples intérieurs. Un des seuls monuments culturels accessibles hors UB — ne pas manquer.",
+      "en": "Paid entry for the inner temples. One of the few cultural monuments accessible outside UB — don't miss it."
+    }
+  },
+  {
+    "id": "tsetserleg",
+    "nom": {
+      "fr": "Tsetserleg — Auberge Fairfield & Temple",
+      "en": "Tsetserleg — Fairfield Guesthouse & Temple"
+    },
+    "ville": {
+      "fr": "Tsetserleg",
+      "en": "Tsetserleg"
+    },
+    "lat": 47.4778,
+    "lng": 101.4514,
+    "categorie": "etape",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🛏️",
+    "dates_festival": {
+      "fr": "Petit Naadam local en juillet",
+      "en": "Small local Naadam in July"
+    },
+    "description": {
+      "fr": "Chef-lieu de la province d'Arkhangaï. L'auberge Fairfield (famille mongole anglophone) est un point de ralliement légendaire pour les cyclistes — bonne cuisine, atelier réparation, infos sur les pistes, organisation de trips à vélo. Temple Zayain Khüree sur la colline derrière la ville avec vue sur la vallée.",
+      "en": "Capital of Arkhangai province. The Fairfield Guesthouse (English-speaking Mongolian family) is a legendary meeting point for cyclists — good food, repair workshop, trail info, bike trip organisation. Zayain Khüree temple on the hill behind town with valley views."
+    },
+    "conseil_velo": {
+      "fr": "Bifurcation possible vers Ikhtamir / la vallée de l'Arkhangai — plus aventureuse que la grande route vers Tariat. Piste washboard vers Jargalant puis piste agréable vers Chuluut avec traversées de rivières.",
+      "en": "You can split off towards Ikhtamir / the Arkhangai Valley — more adventurous than the main road to Tariat. Washboard track towards Jargalant then pleasant trail to Chuluut with river crossings."
+    },
+    "attention": {
+      "fr": "La route Kharkhorin → Tsetserleg est partiellement asphaltée avec de longues sections de piste. Compter 2–3 jours selon le vent.",
+      "en": "The Kharkhorin → Tsetserleg road is partially paved with long dirt sections. Allow 2–3 days depending on the wind."
+    }
+  },
+  {
+    "id": "ikhtamir-split",
+    "nom": {
+      "fr": "Bifurcation Ikhtamir — Route aventureuse vers Tariat",
+      "en": "Ikhtamir Split — Adventurous route to Tariat"
+    },
+    "ville": {
+      "fr": "Ikhtamir",
+      "en": "Ikhtamir"
+    },
+    "lat": 47.62,
+    "lng": 101.25,
+    "categorie": "etape",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🔀",
+    "description": {
+      "fr": "Point de split depuis Tsetserleg : soit la grande route principale vers Tariat, soit la piste via Ikhtamir à travers l'Arkhangai — plus sauvage, plus belle, mais plus exigeante. Début des traversées de rivières.",
+      "en": "Split point from Tsetserleg: either the main road to Tariat, or the track via Ikhtamir through Arkhangai — wilder, more beautiful, but more demanding. River crossings begin here."
+    },
+    "conseil_velo": {
+      "fr": "Recommandé pour les cyclistes cherchant l'aventure et l'isolement. Prévoir la navigation GPS — peu de signalisation.",
+      "en": "Recommended for cyclists seeking adventure and isolation. GPS navigation essential — very few signs."
+    },
+    "attention": {
+      "fr": "Traversées de rivières possibles selon la saison. Demander l'état de la piste aux locaux avant de s'engager.",
+      "en": "River crossings possible depending on the season. Ask locals about track conditions before setting off."
+    }
+  },
+  {
+    "id": "gurvanbulag-otgon",
+    "nom": {
+      "fr": "Gurvanbulag & Otgon Sum",
+      "en": "Gurvanbulag & Otgon Sum"
+    },
+    "ville": {
+      "fr": "Gurvanbulag / Otgon",
+      "en": "Gurvanbulag / Otgon"
+    },
+    "lat": 47.5,
+    "lng": 100.0,
+    "categorie": "etape",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🏘️",
+    "description": {
+      "fr": "Deux villages de ravitaillement et de repos dans la steppe isolée. Otgon Sum est le point de départ vers Otgon Tenger, montagne sacrée pour les Mongols et gros point touristique local. Des voyageurs venus d'UB s'y croisent souvent — bonne occasion de trouver des anglophones.",
+      "en": "Two resupply and rest villages in the isolated steppe. Otgon Sum is the gateway to Otgon Tenger, a sacred mountain and major local tourist attraction. Travellers from UB often pass through — a good chance to find English speakers for info or help."
+    },
+    "conseil_velo": {
+      "fr": "N'hésitez pas à discuter avec les locaux — ils sont souvent curieux et accueillants. Faire le plein d'eau et de nourriture ici.",
+      "en": "Don't hesitate to chat with locals — they're often curious and welcoming. Stock up on water and food here."
+    },
+    "attention": {
+      "fr": "Services très basiques. L'isolement de cette zone est réel — mental bien accroché requis.",
+      "en": "Very basic services. The isolation here is real — mental strength required."
+    }
+  },
+  {
+    "id": "chuluut-thermes",
+    "nom": {
+      "fr": "Thermes de Chuluut",
+      "en": "Chuluut Hot Springs"
+    },
+    "ville": {
+      "fr": "Chuluut",
+      "en": "Chuluut"
+    },
+    "lat": 47.9667,
+    "lng": 100.7167,
+    "categorie": "nature",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "♨️",
+    "description": {
+      "fr": "Sources d'eau chaude naturelles dans les gorges de la rivière Chuluut. Un des secrets les mieux gardés de la route ouest. Après des jours de steppe et de piste, tremper dans une eau à 38°C avec vue sur les falaises de basalte noir est une expérience inoubliable.",
+      "en": "Natural hot springs in the Chuluut river gorge. One of the best-kept secrets on the western route. After days of steppe and dirt tracks, soaking in 38°C water with views of black basalt cliffs is an unforgettable experience."
+    },
+    "conseil_velo": {
+      "fr": "Un stop bien mérité entre Tsetserleg et Tariat. Les gorges de la Chuluut juste avant sont spectaculaires — ne pas faire l'impasse.",
+      "en": "A well-deserved stop between Tsetserleg and Tariat. The Chuluut gorges just before are spectacular — don't skip them."
+    },
+    "attention": {
+      "fr": "Coordonnées approximatives — demander localement 'rashaan' (source thermale). Infrastructure très basique.",
+      "en": "Approximate coordinates — ask locals for 'rashaan' (hot spring). Very basic infrastructure."
+    }
+  },
+  {
+    "id": "tariat-volcan",
+    "nom": {
+      "fr": "Tariat & Volcan Khorgo",
+      "en": "Tariat & Khorgo Volcano"
+    },
+    "ville": {
+      "fr": "Tariat",
+      "en": "Tariat"
+    },
+    "lat": 48.1667,
+    "lng": 99.8833,
+    "categorie": "nature",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🌋",
+    "description": {
+      "fr": "Porte d'entrée du parc national de Khorgo-Terkhiin Tsagaan Nuur. Le volcan Khorgo (ascension 1h) domine un plateau de lave solidifiée. En contrebas, le lac blanc de Terkhiin Tsagaan (lagon volcanique) offre camping et baignade.",
+      "en": "Gateway to Khorgo-Terkhiin Tsagaan Nuur National Park. Khorgo volcano (1h climb) dominates a solidified lava plateau. Below, the White Lake of Terkhiin Tsagaan (volcanic lagoon) offers camping and swimming."
+    },
+    "conseil_velo": {
+      "fr": "Laisser le vélo au village et monter le volcan à pied. Le tour du lac en vélo est faisable et magnifique (environ 30 km).",
+      "en": "Leave your bike in the village and hike up the volcano. Cycling around the lake is doable and stunning (about 30 km)."
+    },
+    "attention": {
+      "fr": "Vent très fort sur le plateau volcanique — anticiper pour le camping. Peu de services.",
+      "en": "Very strong winds on the volcanic plateau — plan accordingly for camping. Few services available."
+    }
+  },
+  {
+    "id": "khangai",
+    "nom": {
+      "fr": "Khangai — Dernier asphalte",
+      "en": "Khangai — Last tarmac"
+    },
+    "ville": {
+      "fr": "Khangai",
+      "en": "Khangai"
+    },
+    "lat": 47.85,
+    "lng": 99.6,
+    "categorie": "etape",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🛣️",
+    "description": {
+      "fr": "Petit village marquant la fin du bitume pour ceux qui roulent vers l'ouest. Après ici, piste exclusivement jusqu'à Uliastai et au-delà. Moment de vérité pour les équipements, la condition physique et les provisions.",
+      "en": "Small village marking the end of the tarmac for westbound riders. After here, it's dirt track only until Uliastai and beyond. A moment of truth for your gear, fitness, and supplies."
+    },
+    "conseil_velo": {
+      "fr": "VÉRIFICATION COMPLÈTE ici : pneus, freins, chaîne, provisions eau et nourriture pour 3–4 jours minimum.",
+      "en": "FULL CHECK HERE: tyres, brakes, chain, water and food for 3–4 days minimum."
+    },
+    "attention": {
+      "fr": "Pas de réseau mobile fiable après ce point. Activer le GPS offline. Le satellite messenger devient essentiel.",
+      "en": "No reliable mobile signal after this point. Enable offline GPS. A satellite messenger becomes essential."
+    }
+  },
+  {
+    "id": "uliastai",
+    "nom": {
+      "fr": "Uliastai — Croisée des chemins",
+      "en": "Uliastai — Crossroads"
+    },
+    "ville": {
+      "fr": "Uliastai",
+      "en": "Uliastai"
+    },
+    "lat": 47.7417,
+    "lng": 96.8444,
+    "categorie": "etape",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "📮",
+    "description": {
+      "fr": "Chef-lieu de la province de Zavkhan, étape cruciale. Ville qui connecte la steppe verte de l'Arkhangaï au désert de l'Ouest. Trois options vers l'ouest : route nord (désertique, peu de villages), route sud vers Altai (plus rude), ou passer au milieu — désert complet. Voir l'article de Ryan Wilson sur Radavist : <a href='https://theradavist.com/ryan-wilson-mongolia' target='_blank'>theradavist.com</a>. Poste centrale pour envoyer du matériel en Europe.",
+      "en": "Capital of Zavkhan province, a crucial stop. City connecting the green Arkhangai steppe to the western desert. Three options heading west: northern route (desert, few villages), southern route to Altai (rougher), or straight through the middle — complete desert. See Ryan Wilson's article on Radavist: <a href='https://theradavist.com/ryan-wilson-mongolia' target='_blank'>theradavist.com</a>. Central post office to send gear back to Europe."
+    },
+    "conseil_velo": {
+      "fr": "L'office de poste peut envoyer des colis jusqu'à 20 kg vers l'Europe. Choisir sa route vers l'ouest en fonction de son niveau et de ses stocks d'eau.",
+      "en": "The post office can send parcels up to 20 kg to Europe. Choose your westward route based on your level and water supplies."
+    },
+    "attention": {
+      "fr": "Vérifier les horaires de la poste (9h–17h, fermée dimanche). Monnaie liquide uniquement. Faire le plein d'eau — certaines routes vers l'ouest n'ont quasiment aucun point d'eau.",
+      "en": "Check post office hours (9am–5pm, closed Sundays). Cash only. Stock up on water — some westward routes have almost no water sources."
+    }
+  },
+  {
+    "id": "point-eau-template",
+    "nom": {
+      "fr": "Point d'eau — [NOM DU VILLAGE]",
+      "en": "Water point — [VILLAGE NAME]"
+    },
+    "ville": {
+      "fr": "[Village]",
+      "en": "[Village]"
+    },
+    "lat": 0.0,
+    "lng": 0.0,
+    "categorie": "nature",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "💧",
+    "description": {
+      "fr": "Point d'eau identifié sur le parcours. [Décrire la source : puits, rivière, fontaine, famille nomade...]. Qualité de l'eau : [à filtrer / potable / à purifier].",
+      "en": "Water point identified on the route. [Describe the source: well, river, fountain, nomadic family...]. Water quality: [filter / drinkable / purify]."
+    },
+    "conseil_velo": {
+      "fr": "Faire le plein systématiquement ici — prochain point d'eau à [X] km environ.",
+      "en": "Always top up here — next water point approximately [X] km ahead."
+    },
+    "attention": {
+      "fr": "Toujours filtrer ou purifier l'eau de source en Mongolie. Prévoir minimum 3–4L de réserve.",
+      "en": "Always filter or purify spring water in Mongolia. Carry at least 3–4L in reserve."
+    }
+  },
+  {
+    "id": "lac-khyargas",
+    "nom": {
+      "fr": "Lac Khyargas — Lac salé",
+      "en": "Khyargas Lake — Salt Lake"
+    },
+    "ville": {
+      "fr": "Lac Khyargas",
+      "en": "Khyargas Lake"
+    },
+    "lat": 49.2,
+    "lng": 93.3,
+    "categorie": "nature",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🏖️",
+    "description": {
+      "fr": "Grand lac salé de la province d'Uvs, avec 1 à 2 campings sur sa rive nord. Spot touristique local, baignade possible dans l'eau salée. Couchers de soleil remarquables.",
+      "en": "Large salt lake in Uvs province, with 1–2 campsites on its northern shore. Local tourist spot, swimming possible in the salt water. Remarkable sunsets."
+    },
+    "conseil_velo": {
+      "fr": "S'approvisionner en eau potable avant d'arriver — le lac est salé, l'eau n'est pas potable.",
+      "en": "Stock up on drinking water before arriving — the lake is salty and the water is not drinkable."
+    },
+    "attention": {
+      "fr": "Eau salée non potable — prévoir l'approvisionnement en amont.",
+      "en": "Salt water is not drinkable — plan your water supply in advance."
+    }
+  },
+  {
+    "id": "nomrog-naranbulag",
+    "nom": {
+      "fr": "Nomrog → Naranbulag — Désert & chameaux",
+      "en": "Nomrog → Naranbulag — Desert & camels"
+    },
+    "ville": {
+      "fr": "Entre Nomrog et Naranbulag",
+      "en": "Between Nomrog and Naranbulag"
+    },
+    "lat": 49.0,
+    "lng": 91.8,
+    "categorie": "nature",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🐪",
+    "description": {
+      "fr": "Nouvelle route splendide traversant un paysage désertique avec chameaux et couchers de soleil magnifiques. Zone très plate sans relief — forte probabilité d'un vent de face puissant pouvant ramener la vitesse à 10 km/h ou moins.",
+      "en": "Beautiful new road crossing a desert landscape with camels and magnificent sunsets. Very flat area — high chance of a powerful headwind that can reduce your speed to 10 km/h or less."
+    },
+    "conseil_velo": {
+      "fr": "Faire du stop si le vent est trop violent — c'est une option tout à fait acceptable. Bifurcation possible vers Khovd (avec sable) ou Ölgii via Uvs/Ulaangom.",
+      "en": "Hitchhike if the wind is too strong — it's a perfectly acceptable option. You can split off towards Khovd (with sand) or Ölgii via Uvs/Ulaangom."
+    },
+    "attention": {
+      "fr": "Épines au sol pouvant crever les pneus. Manque d'eau critique sur ce tronçon.",
+      "en": "Thorns on the ground can puncture tyres. Critical water shortage on this stretch."
+    }
+  },
+  {
+    "id": "khovd-fairfield",
+    "nom": {
+      "fr": "Khovd — Auberge Fairfield",
+      "en": "Khovd — Fairfield Guesthouse"
+    },
+    "ville": {
+      "fr": "Khovd",
+      "en": "Khovd"
+    },
+    "lat": 48.005,
+    "lng": 91.6422,
+    "categorie": "etape",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🛏️",
+    "description": {
+      "fr": "L'auberge Fairfield est aussi présente à Khovd — excellente source d'infos comme à Tsetserleg. Bonne étape pour souffler, laver son linge et planifier la suite vers Ölgii ou la frontière.",
+      "en": "The Fairfield Guesthouse is also here in Khovd — excellent source of information just like in Tsetserleg. A great stop to rest, do laundry, and plan the next stretch to Ölgii or the border."
+    },
+    "conseil_velo": {
+      "fr": "Profitez-en pour faire réviser votre vélo et récupérer les dernières infos sur l'état des pistes vers l'ouest.",
+      "en": "Get your bike checked and gather the latest info on track conditions heading west."
+    },
+    "attention": {
+      "fr": "La piste Uliastai → Khovd traverse des cols à plus de 2500m. Prévoir des vêtements chauds même en été.",
+      "en": "The Uliastai → Khovd track crosses passes above 2,500m. Bring warm clothes even in summer."
+    }
+  },
+  {
+    "id": "khovd-bazar",
+    "nom": {
+      "fr": "Khovd — Bazaar & ravitaillement",
+      "en": "Khovd — Bazaar & resupply"
+    },
+    "ville": {
+      "fr": "Khovd",
+      "en": "Khovd"
+    },
+    "lat": 48.01,
+    "lng": 91.638,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🏪",
+    "description": {
+      "fr": "Le bazaar de Khovd est animé et bien fourni : fruits frais (melons, pastèques), légumes, produits régionaux, accessoires utiles. On y trouve aussi des habits traditionnels comme le Deel, chapeaux et vestes classiques des nomades kazakhs.",
+      "en": "Khovd's bazaar is lively and well-stocked: fresh fruit (melons, watermelons), vegetables, regional produce, and useful accessories. You'll also find traditional clothing like the Deel, hats, and classic Kazakh nomad jackets."
+    },
+    "conseil_velo": {
+      "fr": "Dernier grand ravitaillement avant Ölgii. Faire le plein de tout. Les habits traditionnels sont magnifiques.",
+      "en": "Last major resupply before Ölgii. Stock up on everything. The traditional clothing is beautiful."
+    },
+    "attention": {
+      "fr": "Vous tomberez amoureux de la culture et la mode mongoles.",
+      "en": "You'll fall in love with Mongolian culture and fashion."
+    }
+  },
+  {
+    "id": "resto",
+    "nom": {
+      "fr": "Restaurant délicieux — Baaruund",
+      "en": "Delicious restaurant — Baaruund"
+    },
+    "ville": {
+      "fr": "Khovd",
+      "en": "Khovd"
+    },
+    "lat": 48.00624,
+    "lng": 91.64166,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🍽️",
+    "description": {
+      "fr": "Baaruund, un restaurant proposant une cuisine locale revisitée ou bien chinoise rafraîchissante. Ça change des repas plus rustres du voyage.",
+      "en": "Baaruund, a restaurant serving reinvented local cuisine or refreshing Chinese food. A welcome change from the rustier meals on the road."
+    },
+    "conseil_velo": {
+      "fr": "Délices à n'en pas douter, vous me revaudrez ça.",
+      "en": "Guaranteed to be delicious — you can thank me later."
+    }
+  },
+  {
+    "id": "lac-tolbo",
+    "nom": {
+      "fr": "Lac Tolbo",
+      "en": "Tolbo Lake"
+    },
+    "ville": {
+      "fr": "Lac Tolbo",
+      "en": "Tolbo Lake"
+    },
+    "lat": 48.55537,
+    "lng": 90.09447,
+    "categorie": "nature",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🏞️",
+    "description": {
+      "fr": "Grand lac vers Ölgii, beau spot où camper. Paysage de montagne, coucher de soleil très sympa.",
+      "en": "Large lake near Ölgii, a beautiful campsite spot. Mountain scenery and lovely sunsets."
+    },
+    "conseil_velo": {
+      "fr": "Un dernier stop agréable avant la ville et l'approche de la frontière russe. Baignez-vous !",
+      "en": "A pleasant last stop before the city and the approach to the Russian border. Go for a swim!"
+    }
+  },
+  {
+    "id": "olgii",
+    "nom": {
+      "fr": "Ölgii — Pays kazakh",
+      "en": "Ölgii — Kazakh Country"
+    },
+    "ville": {
+      "fr": "Ölgii",
+      "en": "Ölgii"
+    },
+    "lat": 48.9686,
+    "lng": 89.9628,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏙️",
+    "dates_festival": {
+      "fr": "1er week-end d'octobre — Festival de l'Aigle Kazakh",
+      "en": "1st weekend of October — Kazakh Eagle Festival"
+    },
+    "description": {
+      "fr": "Capitale de la province de Bayan-Ölgii, à 90% kazakhe. Mosquées, yourtes plus élancées, langue turcique — on se croirait au Kazakhstan. Le Festival de l'Aigle en octobre rassemble les chasseurs à l'aigle royal. Possibilité de visiter des familles kazakhes et dormir en yourte.",
+      "en": "Capital of Bayan-Ölgii province, 90% Kazakh. Mosques, taller yurts, Turkic language — you'd think you were in Kazakhstan. The Eagle Festival in October brings together royal eagle hunters. You can visit Kazakh families and sleep in a yurt."
+    },
+    "conseil_velo": {
+      "fr": "Possible d'entrer en Russie via Tsagaannuur, ou redescendre vers la Chine (Takeshiken-Bulgan). Demander un guide local pour découvrir la chasse à l'aigle ou visiter l'Altaï et son glacier du Tavan Bogd.",
+      "en": "You can enter Russia via Tsagaannuur, or head south to China (Takeshiken-Bulgan). Ask a local guide to discover eagle hunting or visit the Altai and Tavan Bogd glacier."
+    },
+    "attention": {
+      "fr": "Prévoir votre temps avec les tours possibles (à combiner avec d'autres voyageurs pour réduire les coûts, un tour de 2-3 jours peut vite coûter 200 à 400 euros par véhicule/guide).",
+      "en": "Plan your time for possible tours (combine with other travellers to share costs — a 2–3 day tour can quickly reach 200–400€ per vehicle/guide)."
+    }
+  },
+  {
+    "id": "olgii-immigration",
+    "nom": {
+      "fr": "Poste d'immigration — Extension de visa",
+      "en": "Immigration Office — Visa Extension"
+    },
+    "ville": {
+      "fr": "Ölgii",
+      "en": "Ölgii"
+    },
+    "lat": 48.96817,
+    "lng": 89.97026,
+    "categorie": "frontiere",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🛂",
+    "description": {
+      "fr": "Extension de visa possible à Ölgii comme dans la majorité des capitales de province de Mongolie. Pour les dernières informations officielles : <a href='https://immigration.gov.mn/en/visa-extension/' target='_blank'>immigration.gov.mn</a>.",
+      "en": "Visa extension available in Ölgii as in most provincial capitals in Mongolia. For the latest official information: <a href='https://immigration.gov.mn/en/visa-extension/' target='_blank'>immigration.gov.mn</a>."
+    },
+    "conseil_velo": {
+      "fr": "Si votre visa approche de son terme, les capitales provinciales permettent une extension. Ne pas attendre le dernier jour — la procédure dure quelques jours.",
+      "en": "If your visa is running out, provincial capitals allow extensions. Don't wait until the last day — the process takes a few days."
+    },
+    "attention": {
+      "fr": "Procédure et documents requis à vérifier à l'avance — cela peut changer.",
+      "en": "Required procedure and documents should be checked in advance — they can change."
+    }
+  },
+  {
+    "id": "change",
+    "nom": {
+      "fr": "Bureau de change — Ölgii",
+      "en": "Currency Exchange — Ölgii"
+    },
+    "ville": {
+      "fr": "Ölgii",
+      "en": "Ölgii"
+    },
+    "lat": 48.9686,
+    "lng": 89.9628,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "💱",
+    "description": {
+      "fr": "À côté de la salle de sport, un bureau de change pour convertir vos derniers Tugriks en roubles (ou inversement si vous venez d'entrer en Mongolie) avant de passer la frontière.",
+      "en": "Next to the gym, a currency exchange office to convert your remaining Tugriks to rubles (or vice versa if you've just entered Mongolia) before crossing the border."
+    },
+    "attention": {
+      "fr": "Vérifier le taux de change. Prévoir de garder un peu de monnaie locale pour les petits achats si vous quittez le pays.",
+      "en": "Check the exchange rate. Keep a little local currency for small purchases if you're leaving the country."
+    }
+  },
+  {
+    "id": "souvenirs",
+    "nom": {
+      "fr": "Souvenirs & Cachemire kazakh",
+      "en": "Souvenirs & Kazakh Cashmere"
+    },
+    "ville": {
+      "fr": "Ölgii",
+      "en": "Ölgii"
+    },
+    "lat": 48.9686,
+    "lng": 89.9628,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🧣",
+    "description": {
+      "fr": "Boutiques de souvenirs et de vêtements en cachemire local. Possibilité de trouver des habits et accessoires traditionnels kazakhs (deel, chapeaux, sacs, accessoires de table).",
+      "en": "Souvenir shops and local cashmere clothing. You'll find traditional Kazakh clothing and accessories (deel, hats, bags, table accessories)."
+    },
+    "conseil_velo": {
+      "fr": "Je recommande les chaussettes en laine de chameau, yak ou en cachemire — vos pieds vous remercieront.",
+      "en": "I recommend camel wool, yak, or cashmere socks — your feet will thank you."
+    }
+  },
+  {
+    "id": "musee",
+    "nom": {
+      "fr": "Musée de Ölgii & cultures minoritaires",
+      "en": "Ölgii Museum & Minority Cultures"
+    },
+    "ville": {
+      "fr": "Ölgii",
+      "en": "Ölgii"
+    },
+    "lat": 48.9686,
+    "lng": 89.9628,
+    "categorie": "culture",
+    "pack": [
+      "aventurier",
+      "cle_en_main"
+    ],
+    "emoji": "🏛️",
+    "description": {
+      "fr": "Musée de Ölgii et des cultures minoritaires de Mongolie. Bonne introduction sur les différentes cultures qui constituent la Mongolie (kazakhes, touvaines etc...). Les animaux empaillés sont une belle tranche de rigolade.",
+      "en": "Museum of Ölgii and Mongolia's minority cultures. A good introduction to the different cultures that make up Mongolia (Kazakh, Tuvan, etc.). The taxidermied animals provide some good laughs."
+    }
+  },
+  {
+    "id": "resto-olgii",
+    "nom": {
+      "fr": "Restaurant à Ölgii — 57 Coffee House",
+      "en": "Restaurant in Ölgii — 57 Coffee House"
+    },
+    "ville": {
+      "fr": "Ölgii",
+      "en": "Ölgii"
+    },
+    "lat": 48.96792,
+    "lng": 89.96941,
+    "categorie": "pratique",
+    "pack": [
+      "aventurier"
+    ],
+    "emoji": "🍽️",
+    "description": {
+      "fr": "57 Coffee House : Resto un peu fancy dans un immeuble du centre avec un menu très sympa sur la nourriture mongole.",
+      "en": "57 Coffee House: a slightly upscale restaurant in a central building with a great menu of Mongolian food."
+    },
+    "conseil_velo": {
+      "fr": "Coup de cœur pour leur Tsuivan bien chargé en quantité et délicieux.",
+      "en": "Personal favourite: their Tsuivan is generous in portion and absolutely delicious."
+    }
+  },
+  {
+    "id": "altai",
+    "nom": {
+      "fr": "Altaï Tavan Bogd",
+      "en": "Altai Tavan Bogd"
+    },
+    "ville": {
+      "fr": "Trois frontières",
+      "en": "Three Borders"
+    },
+    "lat": 49.158626,
+    "lng": 87.93197,
+    "categorie": "nature",
+    "emoji": "🏔️",
+    "description": {
+      "fr": "La beauté des montagnes mongoles. Un glacier énorme encore en bonne forme, point d'union sur 3 frontières montagneuses — Mongolie, Russie et Chine. À couper le souffle.",
+      "en": "The beauty of the Mongolian mountains. A huge glacier still in good shape, at the meeting point of 3 mountain borders — Mongolia, Russia, and China. Breathtaking."
+    },
+    "conseil_velo": {
+      "fr": "À vélo, viser juillet ou août. Préparez-vous au froid à 4000m tout de même. De nombreux tours sont disponibles depuis Ölgii. Il faudra obtenir un permis — soit seul, soit avec votre guide à la base militaire.",
+      "en": "By bike, aim for July or August. Prepare for cold at 4,000m regardless. Many tours available from Ölgii. A permit is required — either on your own or through your guide at the military base."
+    },
+    "attention": {
+      "fr": "Vérifier l'obtention du permis pour atteindre cette zone frontalière. La météo se révèle capricieuse — partez chaudement équipé.",
+      "en": "Check permit requirements for this border zone. Weather is unpredictable — pack warm gear."
+    }
+  },
+  {
+    "id": "tsagaannuur",
+    "nom": {
+      "fr": "Tsagaannuur — Frontière russe",
+      "en": "Tsagaannuur — Russian Border"
+    },
+    "ville": {
+      "fr": "Tsagaannuur",
+      "en": "Tsagaannuur"
+    },
+    "lat": 49.50349,
+    "lng": 89.72749,
+    "categorie": "frontiere",
+    "emoji": "🛂",
+    "description": {
+      "fr": "Petit village frontalier au nord-ouest d'Ölgii, porte d'entrée vers la Russie (République de l'Altaï). Le <a href='https://caravanistan.com/border-crossings/mongolia/#tsagaannuur-%e2%80%93-tashanta' target='_blank'>poste-frontière de Tsagaannuur–Tashanta</a> est ouvert aux touristes étrangers.",
+      "en": "Small border village north-west of Ölgii, gateway to Russia (Altai Republic). The <a href='https://caravanistan.com/border-crossings/mongolia/#tsagaannuur-%e2%80%93-tashanta' target='_blank'>Tsagaannuur–Tashanta border crossing</a> is open to foreign tourists."
+    },
+    "conseil_velo": {
+      "fr": "Vérifier les horaires du poste-frontière (généralement lundi–samedi 9h–18h, fermé dimanche, pause midi possible). Être au poste à 16h au plus tard. La prochaine ville pour récupérer des roubles est Kosh Agach.",
+      "en": "Check border post hours (generally Mon–Sat 9am–6pm, closed Sundays, midday break possible). Arrive by 4pm at the latest. The next town to get rubles is Kosh-Agach."
+    },
+    "attention": {
+      "fr": "Fermé le dimanche. Grosse section de No Man's Land — prévoir presque 2h de trajet pour atteindre le côté russe (25km). Visa russe à obtenir AVANT : e-visa (attention si vous rejoignez le Kazakhstan par voie terrestre ensuite) ou visa touriste classique.",
+      "en": "Closed Sundays. Long No Man's Land section — allow nearly 2h to reach the Russian side (25km). Russian visa must be obtained BEFORE: e-visa (note restrictions if continuing overland to Kazakhstan) or standard tourist visa from your country's consulate."
+    }
+  }
+]

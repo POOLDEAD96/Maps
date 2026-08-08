@@ -1,41 +1,24 @@
 /* ════════════════════════════════════════════════════
-   MONGOLIE À VÉLO — Feuille de style
-   Modifie ce fichier pour changer l'apparence de la carte.
+   BASE UNIVERSELLE — style.css
+   Partagé par toutes les cartes du blog.
+   Ne contient que la structure et les composants.
+
+   Pour personnaliser un pays → [pays]/theme.css
    Structure :
-     1. Variables (couleurs, catégories)
-     2. Base
-     3. Header
-     4. Filtres
-     5. Layout principal
-     6. Panneau détail
+     1. Base
+     2. Header
+     3. Filtres
+     4. Layout principal
+     5. Panneau détail
+     6. Bouton fermeture (mobile)
      7. Marqueurs
      8. Légende
      9. Popups Leaflet
-    10. Responsive
+    10. Responsive mobile
 ════════════════════════════════════════════════════ */
 
 
-/* ── 1. VARIABLES ────────────────────────────────── */
-:root {
-  --ger:       #C8D97A;;   /* fond filtres — soie crème */
-  --sky:       #2E86AB;  /* principal — rouge drapeau */
-  --sky-light: #D94F3D;
-  --ember:     #8B1A1A;   /* alertes — rouge sombre */
-  --birch:     #E8E4DE;   /* fond général — parchemin */
-  --ink:       #1A1008;   /* texte */
-  --muted:     #6B5A3A;   /* texte secondaire */
-  --border:    #D4B896;   /* bordures — cuir clair */
-
-  --cat-depart:       #C0272D;   /* rouge drapeau */
-  --cat-etape:        #1B4F8A;   /* bleu drapeau */
-  --cat-pratique:     #f3c600;   /* jaune */
-  --cat-culture:      #8B6BBE;   /* bleu drapeau */
-  --cat-nature:       #2E8B57;   /* vert prairie */
-  --cat-frontiere:    #5D4037;   /* cuir sombre */
-}
-
-
-/* ── 2. BASE ─────────────────────────────────────── */
+/* ── 1. BASE ─────────────────────────────────────── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -50,7 +33,7 @@ html, body {
 }
 
 
-/* ── 3. HEADER ───────────────────────────────────── */
+/* ── 2. HEADER ───────────────────────────────────── */
 #header {
   background: var(--sky);
   color: #fff;
@@ -63,8 +46,8 @@ html, body {
 }
 
 #header h1 {
-  font-family: 'Asangha', serif; /* fallback: serif si la font n'est pas chargée */
-  font-size: 40px;
+  font-family: var(--font-titre, 'Cinzel', serif);
+  font-size: var(--font-titre-size, 36px);
   letter-spacing: 0.04em;
   line-height: 1.2;
 }
@@ -72,7 +55,7 @@ html, body {
 #header h1 span {
   display: block;
   font-family: 'Inter', sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 400;
   letter-spacing: 0.1em;
   text-transform: uppercase;
@@ -81,22 +64,18 @@ html, body {
 }
 
 #header-right {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-  font-size: 12px;
-  opacity: 1;
+  font-size: 13px;
+  opacity: 0.85;
   color: #fff;
 }
 
 
-/* ── 4. FILTRES ──────────────────────────────────── */
+/* ── 3. FILTRES ──────────────────────────────────── */
 #filters {
   display: flex;
   gap: 6px;
   flex-wrap: wrap;
-  padding: 12px 16px;
+  padding: 10px 16px;
   background: var(--ger);
   border-bottom: 1px solid var(--border);
 }
@@ -121,20 +100,20 @@ html, body {
   border-color: transparent;
 }
 
-/* Couleur active par catégorie */
-.filter-btn[data-cat="all"].active         { background: var(--sky); }
-.filter-btn[data-cat="culture"].active     { background: var(--cat-culture); }
-.filter-btn[data-cat="nature"].active      { background: var(--cat-nature); }
-.filter-btn[data-cat="etape"].active       { background: var(--cat-etape); }
-.filter-btn[data-cat="pratique"].active    { background: var(--cat-pratique); }
-.filter-btn[data-cat="depart"].active      { background: var(--cat-depart); }
-.filter-btn[data-cat="frontiere"].active   { background: var(--cat-frontiere); }
+/* Couleurs actives générées dynamiquement via theme.css */
+.filter-btn[data-cat="all"].active      { background: var(--sky); }
+.filter-btn[data-cat="depart"].active   { background: var(--cat-depart,   #C0272D); }
+.filter-btn[data-cat="etape"].active    { background: var(--cat-etape,    #1B4F8A); }
+.filter-btn[data-cat="pratique"].active { background: var(--cat-pratique, #f3c600); color: #333; }
+.filter-btn[data-cat="culture"].active  { background: var(--cat-culture,  #8B6BBE); }
+.filter-btn[data-cat="nature"].active   { background: var(--cat-nature,   #2E8B57); }
+.filter-btn[data-cat="frontiere"].active{ background: var(--cat-frontiere,#5D4037); }
 
 
-/* ── 5. LAYOUT PRINCIPAL ─────────────────────────── */
+/* ── 4. LAYOUT PRINCIPAL ─────────────────────────── */
 #main {
   display: flex;
-  height: calc(100vh - 145px); /* 145px = hauteur header + filtres */
+  height: calc(100vh - 115px); /* header + filtres */
 }
 
 #map {
@@ -143,7 +122,7 @@ html, body {
 }
 
 
-/* ── 6. PANNEAU DÉTAIL ───────────────────────────── */
+/* ── 5. PANNEAU DÉTAIL ───────────────────────────── */
 #detail {
   width: 370px;
   flex-shrink: 0;
@@ -167,17 +146,22 @@ html, body {
 }
 
 #detail-placeholder .big-emoji { font-size: 48px; }
-#detail-placeholder p { font-size: 13px; line-height: 1.6; }
+
+#detail-placeholder p {
+  font-size: 13px;
+  line-height: 1.6;
+}
 
 #detail-content {
   display: none;
   flex-direction: column;
 }
 
+/* Hero coloré (couleur injectée dynamiquement) */
 .detail-hero {
-  background: var(--sky); /* remplacé dynamiquement par la couleur de la catégorie */
+  position: relative;
   color: #fff;
-  padding: 18px 20px 16px;
+  padding: 18px 44px 16px 20px; /* droite large pour laisser place à la croix */
 }
 
 .detail-hero .cat-badge {
@@ -201,6 +185,7 @@ html, body {
   margin-top: 4px;
 }
 
+/* Corps du panneau */
 .detail-body {
   padding: 16px 20px;
   display: flex;
@@ -236,7 +221,7 @@ html, body {
 /* Bloc conseil vélo */
 .detail-conseil {
   background: #EBF5EC;
-  border-left: 3px solid var(--cat-nature);
+  border-left: 3px solid var(--cat-nature, #2E8B57);
   padding: 10px 12px;
   font-size: 12.5px;
   border-radius: 0 6px 6px 0;
@@ -246,36 +231,11 @@ html, body {
 /* Bloc attention */
 .detail-attention {
   background: #FEF0F0;
-  border-left: 3px solid var(--ember);
+  border-left: 3px solid var(--ember, #8B1A1A);
   padding: 10px 12px;
   font-size: 12.5px;
   border-radius: 0 6px 6px 0;
   color: #6A1010;
-}
-
-/* Bouton fermeture */
-#detail-close {
-  display: none;
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: none;
-  background: rgba(0,0,0,0.20);
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-  z-index: 10;
-  align-items: center;
-  justify-content: center;
-  line-height: 1;
-  transition: background 0.15s;
-}
-
-#detail-close:hover {
-  background: rgba(0,0,0,0.35);
 }
 
 /* Pills pack */
@@ -296,6 +256,32 @@ html, body {
 .pack-pill.aventurier  { background: #2A3A2A; color: #8BCA8B; }
 .pack-pill.cle_en_main { background: #2A2A3A; color: #8B8BCA; }
 
+
+/* ── 6. BOUTON FERMETURE ─────────────────────────── */
+#detail-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.22);
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 0;
+  transition: background 0.15s;
+}
+
+#detail-close:hover { background: rgba(0,0,0,0.38); }
+
+
 /* ── 7. MARQUEURS LEAFLET ────────────────────────── */
 .marker-pin {
   width: 35px;
@@ -308,7 +294,7 @@ html, body {
   border: 1px solid rgba(255,255,255,0.85);
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   cursor: pointer;
-  transition: transform 0.15s, filter 0.15s;
+  transition: filter 0.15s;
 }
 
 .marker-pin:hover { filter: brightness(1.15); }
@@ -325,7 +311,7 @@ html, body {
   position: absolute;
   bottom: 24px;
   left: 12px;
-  background: #E8DABE;
+  background: var(--legende-bg, #E8DABE);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px 14px;
@@ -339,7 +325,7 @@ html, body {
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #6B5A3A;
+  color: var(--muted);
   margin-bottom: 7px;
 }
 
@@ -348,7 +334,7 @@ html, body {
   align-items: center;
   gap: 7px;
   margin-bottom: 5px;
-  color: #6B5A3A;
+  color: var(--muted);
 }
 
 .leg-dot {
@@ -390,11 +376,10 @@ html, body {
 }
 
 
-/* ── 10. RESPONSIVE ──────────────────────────────── */
+/* ── 10. RESPONSIVE MOBILE ───────────────────────── */
 @media (max-width: 700px) {
 
-  /* Empile verticalement au lieu de côte à côte */
-   #main {
+  #main {
     flex-direction: column;
     height: calc(100vh - 90px);
     position: relative;
@@ -406,7 +391,7 @@ html, body {
     min-height: 300px;
   }
 
-  /* Panneau détail — caché par défaut, slide depuis le bas */
+  /* Panneau caché par défaut, slide depuis le bas au clic */
   #detail {
     position: absolute;
     bottom: 0;
@@ -425,36 +410,16 @@ html, body {
     z-index: 1000;
   }
 
-  /* Panneau visible quand la classe .open est ajoutée */
-  #detail.open {
-    transform: translateY(0);
-  }
-
-  /* Bouton fermeture */
-  #detail-close {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    padding: 0;
-  }
+  #detail.open { transform: translateY(0); }
 
   /* Header compact */
-  #header {
-    padding: 8px 16px;
-  }
+  #header { padding: 8px 16px; }
 
-  #header h1 {
-    font-size: 35px;
-  }
+  #header h1 { font-size: 28px; }
 
-  #header h1 span {
-  font-size: 12px;
-}
+  #header h1 span { font-size: 11px; }
 
-  #header-right {
-    display: none;
-  }
+  #header-right { display: none; }
 
   /* Filtres scrollables horizontalement */
   #filters {
@@ -465,15 +430,9 @@ html, body {
     scrollbar-width: none;
   }
 
-  #filters::-webkit-scrollbar {
-    display: none;
-  }
+  #filters::-webkit-scrollbar { display: none; }
 
-  .filter-btn {
-    flex-shrink: 0;
-  }
+  .filter-btn { flex-shrink: 0; }
 
-  #legende {
-    display: none;
-  }
+  #legende { display: none; }
 }
