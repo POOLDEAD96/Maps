@@ -27,9 +27,15 @@
 
 html, body {
   height: 100%;
+  overflow: hidden;  /* ← empêche tout scroll externe */
   font-family: 'Inter', sans-serif;
   background: var(--birch);
   color: var(--ink);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -113,7 +119,8 @@ html, body {
 /* ── 4. LAYOUT PRINCIPAL ─────────────────────────── */
 #main {
   display: flex;
-  height: calc(100vh - 115px); /* header + filtres */
+  flex: 1;           /* ← prend tout l'espace restant automatiquement */
+  min-height: 0;     /* ← nécessaire pour que flex fonctionne dans un contexte contraint */
 }
 
 #map {
