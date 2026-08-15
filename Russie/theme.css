@@ -1,0 +1,32 @@
+/* ════════════════════════════════════════════════════
+   THÈME ALTAÏ RUSSE — theme.css
+   Surcharge uniquement les variables de style.css.
+   Inspiré des forêts de bouleaux, taïga et neige.
+════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette générale ── */
+  --sky:        #2C4A6E;   /* header — bleu nuit taïga */
+  --ger:        #C8D8B0;   /* barre filtres — vert forêt clair */
+  --birch:      #F0EDE6;   /* fond panneau — bouleau blanc */
+  --ember:      #8B2500;   /* alertes */
+  --ink:        #1A1A1A;   /* texte principal */
+  --muted:      #5A5A4A;   /* texte secondaire */
+  --border:     #C8C0A8;   /* bordures */
+
+  /* ── Légende ── */
+  --legende-bg: #E8E0D0;
+
+  /* ── Typographie ── */
+  --font-titre:      'Cinzel', serif;
+  --font-titre-size: 40px;
+
+  /* ── Couleurs des catégories ── */
+  --cat-depart:     #8B2500;
+  --cat-etape:      #2C4A6E;
+  --cat-pratique:   #C8943A;
+  --cat-culture:    #6B4E8E;
+  --cat-nature:     #2E6B3E;
+  --cat-frontiere:  #4A3728;
+  --cat-point_de_vue: #C8943A;
+}

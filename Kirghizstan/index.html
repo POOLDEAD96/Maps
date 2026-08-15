@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kirghizistan à Vélo — Carte Interactive</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     CONFIG
+     Centré sur le Kirghizistan —
+     Bichkek au nord, Sary-Tash au sud,
+     Karakol à l'est, Osh au sud-ouest.
+════════════════════════════════════════════════ -->
+<script>
+const CONFIG = {
+
+  centre:     [41, 74.5],
+  zoom:       7,
+  zoomMobile: 5,
+
+  tileUrl:         'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+  tileAttribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
+
+  /* Contour du pays */
+  contour:       'contour_kirgizstan.json',
+  contourColor:  '#250598',
+  contourWeight: 2,
+
+  pois: 'pois.json',
+
+  header: {
+    titre:     { fr: "Kirghizistan à Vélo",                              en: "Kyrgyzstan by Bike"                             },
+    soustitre: { fr: "Carte interactive des étapes & points d'intérêt",  en: "Interactive map of stages & points of interest" },
+    droite:    { fr: "🚴 Bichkek · Issyk-Koul · Pamir",                 en: "🚴 Bishkek · Issyk-Kul · Pamir"                }
+  },
+
+  /* ⚠️ Couleurs en hex direct — pas de var(--...) */
+  categories: [
+    { id: 'etape',    color: '#1A5276', label: { fr: 'Étapes',          en: 'Stages'         } },
+    { id: 'pratique', color: '#C8943A', label: { fr: 'Infos pratiques', en: 'Practical info' } },
+    { id: 'culture',  color: '#6C3483', label: { fr: 'Culture',         en: 'Culture'        } },
+    { id: 'nature',   color: '#1E8449', label: { fr: 'Nature',          en: 'Nature'         } },
+    { id: 'frontiere',color: '#2C3E50', label: { fr: 'Frontière',       en: 'Border'         } }
+  ]
+};
+</script>
+
+<header id="header">
+  <h1>
+    <div id="header-titre"></div>
+    <span id="header-soustitre"></span>
+  </h1>
+  <div id="header-right"></div>
+</header>
+
+<div id="filters">
+  <button class="filter-btn active" data-cat="all">Tout afficher</button>
+  <button class="filter-btn" data-cat="etape">🏠</button>
+  <button class="filter-btn" data-cat="pratique">🛠️</button>
+  <button class="filter-btn" data-cat="culture">🏛️</button>
+  <button class="filter-btn" data-cat="nature">🌿</button>
+  <button class="filter-btn" data-cat="frontiere">🛂</button>
+</div>
+
+<div id="main">
+  <div id="map"></div>
+  <aside id="detail">
+    <div id="detail-placeholder">
+      <div class="big-emoji">🗺️</div>
+      <p></p>
+    </div>
+    <div id="detail-content"></div>
+  </aside>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../carte.js"></script>
+
+</body>
+</html>

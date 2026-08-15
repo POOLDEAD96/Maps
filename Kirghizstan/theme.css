@@ -1,0 +1,31 @@
+/* ════════════════════════════════════════════════════
+   THÈME KIRGHIZISTAN — theme.css
+   Inspiré des yourtes, prairies alpines, lacs
+   turquoise et ciel de haute montagne.
+════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette générale ── */
+  --sky:        #1A5276;   /* header — bleu lac Issyk-Koul */
+  --ger:        #A9CCE3;   /* barre filtres — bleu ciel alpin */
+  --birch:      #EAF4FB;   /* fond panneau — bleu très clair */
+  --ember:      #922B21;   /* alertes */
+  --ink:        #1A1A2A;   /* texte principal */
+  --muted:      #4A5A6A;   /* texte secondaire */
+  --border:     #A8C4D8;   /* bordures */
+
+  /* ── Légende ── */
+  --legende-bg: #D6EAF8;
+
+  /* ── Typographie ── */
+  --font-titre:      'Cinzel', serif;
+  --font-titre-size: 40px;
+
+  /* ── Couleurs des catégories ── */
+  --cat-depart:    #922B21;
+  --cat-etape:     #1A5276;
+  --cat-pratique:  #C8943A;
+  --cat-culture:   #6C3483;
+  --cat-nature:    #1E8449;
+  --cat-frontiere: #2C3E50;
+}

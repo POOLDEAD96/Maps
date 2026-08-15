@@ -166,7 +166,9 @@ body {
 
 /* Hero coloré (couleur injectée dynamiquement) */
 .detail-hero {
-  position: relative;
+  position: sticky;
+  top: 0;
+  z-index: 5;
   color: #fff;
   padding: 18px 44px 16px 20px; /* droite large pour laisser place à la croix */
 }
@@ -430,12 +432,15 @@ body {
 
   /* Filtres scrollables horizontalement */
   #filters {
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding: 8px 12px;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  padding: 8px 12px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  /* Dégradé sur la droite pour indiquer qu'il y a plus */
+  -webkit-mask-image: linear-gradient(to right, black 80%, transparent 100%);
+  mask-image: linear-gradient(to right, black 80%, transparent 100%);
+}
 
   #filters::-webkit-scrollbar { display: none; }
 

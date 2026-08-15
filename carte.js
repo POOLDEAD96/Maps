@@ -138,11 +138,11 @@ function showDetail(poi) {
         ${t(poi.description)}
       </div>
       ${festivalHtml}
-      ${packHtml}
       ${conseilHtml}
       ${attentionHtml}
     </div>
   `;
+  /*à rajouter si je veux les packs    ${packHtml}*/
 
   /* Réattacher l'événement sur le bouton close recréé dans le innerHTML */
   document.getElementById('detail-close').addEventListener('click', fermerDetail);

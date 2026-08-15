@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Altaï Russe à Vélo — Carte Interactive</title>
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="theme.css" />
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════
+     CONFIG
+     Centré sur l'Altaï russe pour englober
+     Tashanta → Novosibirsk → Omsk
+════════════════════════════════════════════════ -->
+<script>
+const CONFIG = {
+
+  centre:     [52.0, 81.0],
+  zoom:       6,
+  zoomMobile: 4,
+
+  tileUrl:         'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',
+  tileAttribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors © <a href="https://carto.com/">CARTO</a>',
+
+  /* Contour du pays */
+  contour:       'contour_russie.json',
+  contourColor:  '#250598',
+  contourWeight: 2,
+
+  pois: 'pois.json',
+
+  header: {
+    titre:     { fr: "Altaï Russe à Vélo",                          en: "Russian Altai by Bike"                    },
+    soustitre: { fr: "Carte interactive des étapes & points d'intérêt", en: "Interactive map of stages & points of interest" },
+    droite:    { fr: "🚴 De la frontière mongole à Omsk",           en: "🚴 From the Mongolian border to Omsk"     }
+  },
+
+  /* ⚠️ Couleurs en hex direct — pas de var(--...) */
+  categories: [
+    { id: 'etape',       color: '#2C4A6E', label: { fr: 'Étapes',            en: 'Stages'           } },
+    { id: 'pratique',    color: '#C8943A', label: { fr: 'Infos pratiques',   en: 'Practical info'   } },
+    { id: 'culture',     color: '#6B4E8E', label: { fr: 'Culture',           en: 'Culture'          } },
+    { id: 'nature',      color: '#2E6B3E', label: { fr: 'Nature',            en: 'Nature'           } },
+    { id: 'frontiere',   color: '#4A3728', label: { fr: 'Frontière',         en: 'Border'           } },
+    { id: 'point_de_vue',color: '#C8943A', label: { fr: 'Point de vue',      en: 'Viewpoint'        } }
+  ]
+};
+</script>
+
+<header id="header">
+  <h1>
+    <div id="header-titre"></div>
+    <span id="header-soustitre"></span>
+  </h1>
+  <div id="header-right"></div>
+</header>
+
+<div id="filters">
+  <button class="filter-btn active" data-cat="all">Tout afficher</button>
+  <button class="filter-btn" data-cat="etape">🏠</button>
+  <button class="filter-btn" data-cat="pratique">🛠️</button>
+  <button class="filter-btn" data-cat="culture">🏛️</button>
+  <button class="filter-btn" data-cat="nature">🌿</button>
+  <button class="filter-btn" data-cat="frontiere">🛂</button>
+  <button class="filter-btn" data-cat="point_de_vue">👁️</button>
+</div>
+
+<div id="main">
+  <div id="map"></div>
+  <aside id="detail">
+    <div id="detail-placeholder">
+      <div class="big-emoji">🗺️</div>
+      <p></p>
+    </div>
+    <div id="detail-content"></div>
+  </aside>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="../carte.js"></script>
+
+</body>
+</html>

@@ -778,36 +778,6 @@
     }
   },
   {
-    "id": "point-eau-template",
-    "nom": {
-      "fr": "Point d'eau — [NOM DU VILLAGE]",
-      "en": "Water point — [VILLAGE NAME]"
-    },
-    "ville": {
-      "fr": "[Village]",
-      "en": "[Village]"
-    },
-    "lat": 0.0,
-    "lng": 0.0,
-    "categorie": "nature",
-    "pack": [
-      "aventurier"
-    ],
-    "emoji": "💧",
-    "description": {
-      "fr": "Point d'eau identifié sur le parcours. [Décrire la source : puits, rivière, fontaine, famille nomade...]. Qualité de l'eau : [à filtrer / potable / à purifier].",
-      "en": "Water point identified on the route. [Describe the source: well, river, fountain, nomadic family...]. Water quality: [filter / drinkable / purify]."
-    },
-    "conseil_velo": {
-      "fr": "Faire le plein systématiquement ici — prochain point d'eau à [X] km environ.",
-      "en": "Always top up here — next water point approximately [X] km ahead."
-    },
-    "attention": {
-      "fr": "Toujours filtrer ou purifier l'eau de source en Mongolie. Prévoir minimum 3–4L de réserve.",
-      "en": "Always filter or purify spring water in Mongolia. Carry at least 3–4L in reserve."
-    }
-  },
-  {
     "id": "lac-khyargas",
     "nom": {
       "fr": "Lac Khyargas — Lac salé",

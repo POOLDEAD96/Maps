@@ -1,0 +1,32 @@
+/* ════════════════════════════════════════════════════
+   THÈME OUZBÉKISTAN — theme.css
+   Inspiré des carreaux de faïence bleu turquoise,
+   des coupoles dorées de Samarcande et du sable
+   du désert du Kyzylkoum.
+════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette générale ── */
+  --sky:        #1A5276;   /* header — bleu faïence ouzbèke */
+  --ger:        #F0C060;   /* barre filtres — or coupoles */
+  --birch:      #FDF6E8;   /* fond panneau — sable désert */
+  --ember:      #922B21;   /* alertes */
+  --ink:        #1A1208;   /* texte principal */
+  --muted:      #5A4020;   /* texte secondaire */
+  --border:     #D4A840;   /* bordures */
+
+  /* ── Légende ── */
+  --legende-bg: #F5E4A0;
+
+  /* ── Typographie ── */
+  --font-titre:      'Cinzel', serif;
+  --font-titre-size: 36px;
+
+  /* ── Couleurs des catégories ── */
+  --cat-depart:    #922B21;
+  --cat-etape:     #1A5276;
+  --cat-pratique:  #C8943A;
+  --cat-culture:   #6B3A00;
+  --cat-nature:    #2E6B3E;
+  --cat-frontiere: #2C2C2C;
+}

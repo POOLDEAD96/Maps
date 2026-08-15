@@ -1,0 +1,30 @@
+/* ════════════════════════════════════════════════════
+   THÈME PAMIR — theme.css
+   Inspiré des hauts plateaux, ciel à 4000m,
+   terres ocres et neiges éternelles.
+════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette générale ── */
+  --sky:        #7B3F00;   /* header — terre brûlée / ocre Pamir */
+  --ger:        #C4A882;   /* barre filtres — sable plateau */
+  --birch:      #F5EDE0;   /* fond panneau — parchemin chaud */
+  --ember:      #8B0000;   /* alertes */
+  --ink:        #1A1008;   /* texte principal */
+  --muted:      #6B5030;   /* texte secondaire */
+  --border:     #C8A87A;   /* bordures */
+
+  /* ── Légende ── */
+  --legende-bg: #E8D5B0;
+
+  /* ── Typographie ── */
+  --font-titre:      'Cinzel', serif;
+  --font-titre-size: 40px;
+
+  /* ── Couleurs des catégories ── */
+  --cat-etape:     #5D4A2A;
+  --cat-pratique:  #C8943A;
+  --cat-culture:   #4A235A;
+  --cat-nature:    #1B5E20;
+  --cat-frontiere: #2A2A2A;
+}

@@ -1,0 +1,30 @@
+/* ════════════════════════════════════════════════════
+   THÈME KAZAKHSTAN — theme.css
+   Inspiré de la steppe infinie, des dunes dorées,
+   du bleu du drapeau et de la Mer Caspienne.
+════════════════════════════════════════════════════ */
+
+:root {
+  /* ── Palette générale ── */
+  --sky:        #1A6B3C;   /* header — vert drapeau kazakhe */
+  --ger:        #F0D080;   /* barre filtres — steppe dorée */
+  --birch:      #FDF8EE;   /* fond panneau — sable clair */
+  --ember:      #922B21;   /* alertes */
+  --ink:        #1A1A08;   /* texte principal */
+  --muted:      #5A4A20;   /* texte secondaire */
+  --border:     #D4C080;   /* bordures */
+
+  /* ── Légende ── */
+  --legende-bg: #F5E8B0;
+
+  /* ── Typographie ── */
+  --font-titre:      'Cinzel', serif;
+  --font-titre-size: 40px;
+
+  /* ── Couleurs des catégories ── */
+  --cat-etape:     #1A6B3C;
+  --cat-pratique:  #C8943A;
+  --cat-culture:   #1A4A8A;
+  --cat-nature:    #C8600A;
+  --cat-frontiere: #2C2C2C;
+}
