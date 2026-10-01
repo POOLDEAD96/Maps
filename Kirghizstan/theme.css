@@ -6,16 +6,16 @@
 
 :root {
   /* ── Palette générale ── */
-  --sky:        #1A5276;   /* header — bleu lac Issyk-Koul */
-  --ger:        #A9CCE3;   /* barre filtres — bleu ciel alpin */
-  --birch:      #EAF4FB;   /* fond panneau — bleu très clair */
+  --sky:        #A50E20;   /* header — bleu lac Issyk-Koul */
+  --ger:        #FFCC00;   /* barre filtres — bleu ciel alpin */
+  --birch:      #F5EDE0;   /* fond panneau — bleu très clair */
   --ember:      #922B21;   /* alertes */
   --ink:        #1A1A2A;   /* texte principal */
   --muted:      #4A5A6A;   /* texte secondaire */
-  --border:     #A8C4D8;   /* bordures */
+  --border:     #C8A878;   /* bordures */
 
   /* ── Légende ── */
-  --legende-bg: #D6EAF8;
+  --legende-bg: #F5E0A0;
 
   /* ── Typographie ── */
   --font-titre:      'Cinzel', serif;
@@ -23,9 +23,9 @@
 
   /* ── Couleurs des catégories ── */
   --cat-depart:    #922B21;
-  --cat-etape:     #1A5276;
-  --cat-pratique:  #C8943A;
-  --cat-culture:   #6C3483;
-  --cat-nature:    #1E8449;
-  --cat-frontiere: #2C3E50;
+  --cat-etape:     #A50E20;
+  --cat-pratique:  #C8A000;
+  --cat-culture:   #6B3A00;
+  --cat-nature:    #2E6B3E;
+  --cat-frontiere: #3A3A3A;
 }

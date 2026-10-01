@@ -45,19 +45,18 @@ const CONFIG = {
 
   /* ⚠️ Couleurs en hex direct — pas de var(--...) */
   categories: [
-    { id: 'depart',   color: '#922B21', label: { fr: 'Point de départ', en: 'Starting point' } },
-    { id: 'etape',    color: '#1A5276', label: { fr: 'Étapes',          en: 'Stages'         } },
-    { id: 'pratique', color: '#C8943A', label: { fr: 'Infos pratiques', en: 'Practical info' } },
-    { id: 'culture',  color: '#6B3A00', label: { fr: 'Culture',         en: 'Culture'        } },
-    { id: 'nature',   color: '#2E6B3E', label: { fr: 'Nature',          en: 'Nature'         } },
-    { id: 'frontiere',color: '#2C2C2C', label: { fr: 'Frontière',       en: 'Border'         } }
+    { id: 'etape',    color: '#0E7FA8', label: { fr: 'Étapes',          en: 'Stages'         } },
+    { id: 'pratique', color: '#C87830', label: { fr: 'Infos pratiques', en: 'Practical info' } },
+    { id: 'culture',  color: '#1EBD56', label: { fr: 'Culture',         en: 'Culture'        } },
+    { id: 'nature',   color: '#8B5E2A', label: { fr: 'Nature',          en: 'Nature'         } },
+    { id: 'frontiere',color: '#3A3A3A', label: { fr: 'Frontière',       en: 'Border'         } }
   ]
 };
 </script>
 
 <header id="header">
   <h1>
-    <span id="header-titre"></span>
+    <div id="header-titre"></div>
     <span id="header-soustitre"></span>
   </h1>
   <div id="header-right"></div>
@@ -65,7 +64,6 @@ const CONFIG = {
 
 <div id="filters">
   <button class="filter-btn active" data-cat="all">Tout afficher</button>
-  <button class="filter-btn" data-cat="depart">🚩</button>
   <button class="filter-btn" data-cat="etape">🏠</button>
   <button class="filter-btn" data-cat="pratique">🛠️</button>
   <button class="filter-btn" data-cat="culture">🏛️</button>

@@ -6,25 +6,25 @@
 
 :root {
   /* ── Palette générale ── */
-  --sky:        #1A6B3C;   /* header — vert drapeau kazakhe */
-  --ger:        #F0D080;   /* barre filtres — steppe dorée */
-  --birch:      #FDF8EE;   /* fond panneau — sable clair */
+  --sky:        #005A78;   /* header — vert drapeau kazakhe */
+  --ger:        #00AFCA;   /* barre filtres — steppe dorée */
+  --birch:      #D0F0F8;   /* fond panneau — sable clair */
   --ember:      #922B21;   /* alertes */
   --ink:        #1A1A08;   /* texte principal */
   --muted:      #5A4A20;   /* texte secondaire */
-  --border:     #D4C080;   /* bordures */
+  --border:     #80D4E8;   /* bordures */
 
   /* ── Légende ── */
-  --legende-bg: #F5E8B0;
+  --legende-bg: #E0F5FA;
 
   /* ── Typographie ── */
   --font-titre:      'Cinzel', serif;
   --font-titre-size: 40px;
 
   /* ── Couleurs des catégories ── */
-  --cat-etape:     #1A6B3C;
-  --cat-pratique:  #C8943A;
-  --cat-culture:   #1A4A8A;
+  --cat-etape:     #0098B4;
+  --cat-pratique:  #C8A000;
+  --cat-culture:   #005A78;
   --cat-nature:    #C8600A;
-  --cat-frontiere: #2C2C2C;
+  --cat-frontiere: #3A3A3A;
 }

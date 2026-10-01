@@ -172,7 +172,7 @@
     "nom": { "fr": "Chike Taman — Point de vue", "en": "Chike Taman — Viewpoint" },
     "ville": { "fr": "Khabarovka", "en": "Khabarovka" },
     "lat": 50.6450, "lng": 86.3120,
-    "categorie": "point_de_vue",
+    "categorie": "nature",
     "pack": ["aventurier"],
     "emoji": "👁️",
     "description": { "fr": "", "en": "" },

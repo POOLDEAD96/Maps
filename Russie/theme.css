@@ -6,16 +6,16 @@
 
 :root {
   /* ── Palette générale ── */
-  --sky:        #2C4A6E;   /* header — bleu nuit taïga */
-  --ger:        #C8D8B0;   /* barre filtres — vert forêt clair */
-  --birch:      #F0EDE6;   /* fond panneau — bouleau blanc */
-  --ember:      #8B2500;   /* alertes */
-  --ink:        #1A1A1A;   /* texte principal */
-  --muted:      #5A5A4A;   /* texte secondaire */
-  --border:     #C8C0A8;   /* bordures */
+  --sky:    #1A3A5C;   /* header — bleu nuit, lisible, posé */
+  --ger:    #3399FF;   /* filtres — bleu drapeau, vif mais sur fond coloré ça passe */
+  --birch:  #EBF5FF;   /* panneau détail — bleu quasi blanc, reposant */
+  --ember:  #8B2500;   /* alertes */
+  --ink:    #1A1A1A;   /* texte principal */
+  --muted:  #4A6080;   /* texte secondaire — gris ardoise */
+  --border: #80BFFF;   /* bordures — bleu ciel */
 
   /* ── Légende ── */
-  --legende-bg: #E8E0D0;
+  --legende-bg: #C5E0FF;   /* légende — bleu pâle */
 
   /* ── Typographie ── */
   --font-titre:      'Cinzel', serif;
@@ -23,10 +23,9 @@
 
   /* ── Couleurs des catégories ── */
   --cat-depart:     #8B2500;
-  --cat-etape:      #2C4A6E;
+  --cat-etape:      #2E7DC4;   /* marqueurs étapes — bleu moyen */
   --cat-pratique:   #C8943A;
   --cat-culture:    #6B4E8E;
   --cat-nature:     #2E6B3E;
-  --cat-frontiere:  #4A3728;
-  --cat-point_de_vue: #C8943A;
+  --cat-frontiere:  #8B2500;
 }

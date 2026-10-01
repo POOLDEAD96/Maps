@@ -158,30 +158,6 @@
     "attention": { "fr": "Eviter de rouler la nuit avec les camions, la poussière et l'état de la route,", "en": "" }
   },
   {
-    "id": "etat-route-3",
-    "nom": { "fr": "État de la route — Section 3", "en": "Road conditions — Section 3" },
-    "ville": { "fr": "", "en": "" },
-    "lat": 37.3000, "lng": 71.7000,
-    "categorie": "pratique",
-    "pack": ["aventurier"],
-    "emoji": "🛣️",
-    "description": { "fr": "", "en": "" },
-    "conseil_velo": { "fr": "", "en": "" },
-    "attention": { "fr": "", "en": "" }
-  },
-  {
-    "id": "etat-route-4",
-    "nom": { "fr": "État de la route — Section 4", "en": "Road conditions — Section 4" },
-    "ville": { "fr": "", "en": "" },
-    "lat": 37.2000, "lng": 71.8500,
-    "categorie": "pratique",
-    "pack": ["aventurier"],
-    "emoji": "🛣️",
-    "description": { "fr": "", "en": "" },
-    "conseil_velo": { "fr": "", "en": "" },
-    "attention": { "fr": "", "en": "" }
-  },
-  {
     "id": "khorog",
     "nom": { "fr": "Khorog", "en": "Khorog" },
     "ville": { "fr": "Khorog", "en": "Khorog" },
@@ -209,7 +185,7 @@
     "id": "jelondy",
     "nom": { "fr": "Jelondy", "en": "Jelondy" },
     "ville": { "fr": "Jelondy", "en": "Jelondy" },
-    "lat": 37.9833, "lng": 72.6167,
+    "lat": 37.5754, "lng": 72.5825,
     "categorie": "etape",
     "pack": ["aventurier"],
     "emoji": "🏘️",
@@ -218,10 +194,22 @@
     "attention": { "fr": "", "en": "" }
   },
   {
+    "id": "etat-route-3",
+    "nom": { "fr": "État de la route — Section Jelondy-Alichur", "en": "Road conditions — Jelondy-Alichur Section" },
+    "ville": { "fr": "", "en": "" },
+    "lat": 37.4939, "lng": 72.7264,
+    "categorie": "pratique",
+    "pack": ["aventurier"],
+    "emoji": "🛣️",
+    "description": { "fr": "", "en": "" },
+    "conseil_velo": { "fr": "", "en": "" },
+    "attention": { "fr": "", "en": "" }
+  },
+  {
     "id": "alichur",
     "nom": { "fr": "Alichur", "en": "Alichur" },
     "ville": { "fr": "Alichur", "en": "Alichur" },
-    "lat": 37.7833, "lng": 73.6500,
+    "lat": 37.7534, "lng": 73.2617,
     "categorie": "etape",
     "pack": ["aventurier"],
     "emoji": "🏘️",
@@ -233,7 +221,7 @@
     "id": "murghab",
     "nom": { "fr": "Murghab", "en": "Murghab" },
     "ville": { "fr": "Murghab", "en": "Murghab" },
-    "lat": 38.1667, "lng": 74.0000,
+    "lat": 38.17923, "lng": 73.9717,
     "categorie": "etape",
     "pack": ["aventurier"],
     "emoji": "🏙️",
@@ -242,10 +230,10 @@
     "attention": { "fr": "", "en": "" }
   },
   {
-    "id": "ak-baital",
-    "nom": { "fr": "Col Ak-Baital — 4655m", "en": "Ak-Baital Pass — 4655m" },
+    "id": "maison-ak-baital",
+    "nom": { "fr": "Maison (avant/après) le col de l'Ak-Baital", "en": "Ak-Baital Pass — 4655m" },
     "ville": { "fr": "Ak-Baital", "en": "Ak-Baital" },
-    "lat": 38.4667, "lng": 74.0000,
+    "lat": 38.5609, "lng": 73.5958,
     "categorie": "nature",
     "pack": ["aventurier"],
     "emoji": "⛰️",
@@ -254,13 +242,70 @@
     "attention": { "fr": "", "en": "" }
   },
   {
+    "id": "ak-baital",
+    "nom": { "fr": "Col Ak-Baital — 4655m", "en": "Ak-Baital Pass — 4655m" },
+    "ville": { "fr": "Ak-Baital", "en": "Ak-Baital" },
+    "lat": 38.5609, "lng": 73.5958,
+    "categorie": "nature",
+    "pack": ["aventurier"],
+    "emoji": "⛰️",
+    "description": { "fr": "", "en": "" },
+    "conseil_velo": { "fr": "", "en": "" },
+    "attention": { "fr": "", "en": "" }
+  },
+  {
+    "id": "etat-route-4",
+    "nom": { "fr": "État de la route — Section Ak-Baital-Karakul", "en": "Road conditions — Ak-Baital-Karakul Section" },
+    "ville": { "fr": "", "en": "" },
+    "lat": 38.5008, "lng": 73.8283,
+    "categorie": "pratique",
+    "pack": ["aventurier"],
+    "emoji": "🛣️",
+    "description": { "fr": "", "en": "" },
+    "conseil_velo": { "fr": "", "en": "" },
+    "attention": { "fr": "", "en": "" }
+  },
+  {
     "id": "karakul",
-    "nom": { "fr": "Lac Karakul", "en": "Karakul Lake" },
+    "nom": { "fr": "Lac et village de Karakul", "en": "Karakul Lake and village" },
     "ville": { "fr": "Karakul", "en": "Karakul" },
     "lat": 39.0167, "lng": 73.5500,
     "categorie": "nature",
     "pack": ["aventurier", "cle_en_main"],
     "emoji": "🏞️",
+    "description": { "fr": "", "en": "" },
+    "conseil_velo": { "fr": "", "en": "" },
+    "attention": { "fr": "", "en": "" }
+  },
+  {
+    "id": "kyzyl-art",
+    "nom": { "fr": "Col de Kyzyl Art", "en": "Kyzyl Art Pass" },
+    "lat": 39.3842, "lng": 73.3215,
+    "categorie": "nature",
+    "pack": ["aventurier", "cle_en_main"],
+    "emoji": "🏞️",
+    "description": { "fr": "", "en": "" },
+    "conseil_velo": { "fr": "", "en": "" },
+    "attention": { "fr": "", "en": "" }
+  },
+  {
+    "id": "frontiere-kyrgyz-tadjik-1",
+    "nom": { "fr": "Frontière Kirghizistan — Tadjikistan / Coté Tadjike", "en": "Kyrgyzstan — Tajikistan Border / Tadjik Side" },
+    "lat": 39.3739, "lng": 73.3270,
+    "categorie": "frontiere",
+    "pack": ["aventurier"],
+    "emoji": "🛂",
+    "description": { "fr": "", "en": "" },
+    "conseil_velo": { "fr": "", "en": "" },
+    "attention": { "fr": "", "en": "" }
+  },
+  {
+    "id": "frontiere-kyrgyz-tadjik-2",
+    "nom": { "fr": "Frontière Kirghizistan — Tadjikistan / Coté Kirghize", "en": "Kyrgyzstan — Tajikistan Border / Kirghiz Side" },
+    "lat": 39.5084, "lng": 73.2689,
+    "categorie": "frontiere",
+    "pack": ["aventurier"],
+    "emoji": "🛂",
     "description": { "fr": "", "en": "" },
     "conseil_velo": { "fr": "", "en": "" },
     "attention": { "fr": "", "en": "" }
@@ -285,18 +330,6 @@
     "categorie": "etape",
     "pack": ["aventurier"],
     "emoji": "🛏️",
-    "description": { "fr": "", "en": "" },
-    "conseil_velo": { "fr": "", "en": "" },
-    "attention": { "fr": "", "en": "" }
-  },
-  {
-    "id": "frontiere-kyrgyz-tadjik",
-    "nom": { "fr": "Frontière Kirghizistan — Tadjikistan", "en": "Kyrgyzstan — Tajikistan Border" },
-    "ville": { "fr": "Sary-Tash", "en": "Sary-Tash" },
-    "lat": 39.6500, "lng": 73.0000,
-    "categorie": "frontiere",
-    "pack": ["aventurier"],
-    "emoji": "🛂",
     "description": { "fr": "", "en": "" },
     "conseil_velo": { "fr": "", "en": "" },
     "attention": { "fr": "", "en": "" }

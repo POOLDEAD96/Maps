@@ -7,16 +7,16 @@
 
 :root {
   /* ── Palette générale ── */
-  --sky:        #1A5276;   /* header — bleu faïence ouzbèke */
-  --ger:        #F0C060;   /* barre filtres — or coupoles */
-  --birch:      #FDF6E8;   /* fond panneau — sable désert */
+  --sky:        #0E7FA8;   /* header — bleu faïence ouzbèke */
+  --ger:        #1EBD56;   /* barre filtres — or coupoles */
+  --birch:      #FDF4E3;   /* fond panneau — sable désert */
   --ember:      #922B21;   /* alertes */
   --ink:        #1A1208;   /* texte principal */
   --muted:      #5A4020;   /* texte secondaire */
-  --border:     #D4A840;   /* bordures */
+  --border:     #C8A050;   /* bordures */
 
   /* ── Légende ── */
-  --legende-bg: #F5E4A0;
+  --legende-bg: #F5E8C0;
 
   /* ── Typographie ── */
   --font-titre:      'Cinzel', serif;
@@ -24,9 +24,9 @@
 
   /* ── Couleurs des catégories ── */
   --cat-depart:    #922B21;
-  --cat-etape:     #1A5276;
-  --cat-pratique:  #C8943A;
-  --cat-culture:   #6B3A00;
-  --cat-nature:    #2E6B3E;
-  --cat-frontiere: #2C2C2C;
+  --cat-etape:     #0E7FA8;
+  --cat-pratique:  #C87830;
+  --cat-culture:   #1EBD56;
+  --cat-nature:    #8B5E2A;
+  --cat-frontiere: #3A3A3A;
 }
