@@ -277,7 +277,7 @@ fetch(CONFIG.pois)
       marker.bindPopup(`
         <div class="popup-cat">${CAT_LABELS[poi.categorie] || poi.categorie}</div>
         <div class="popup-title">${poi.emoji || ''} ${t(poi.nom)}</div>
-        <div style="font-size:11px;color:#888;margin-top:2px">${poi.ville}</div>
+        <div style="font-size:11px;color:#888;margin-top:2px">${t(poi.ville)}</div>
       `, { maxWidth: 220, closeButton: false });
 
       marker.on('click',     ()          => showDetail(poi));
